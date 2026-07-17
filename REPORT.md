@@ -24,9 +24,13 @@ https://claude.ai/code/artifact/b9e343f4-9857-4e56-9447-211aac0736a0
 | 3 | capacity written per-lane where GMNS/kernel expect total | motorway cap/lane read 1,100 vs osm2gmns 2,300 | converter+fill multiply by lanes; bench step5 no longer double-counts |
 | 4 | link.csv unsorted; no dual-unit columns | gmns-ready Level-3 FAIL | forward-star sort; `vdf_length_mi`/`vdf_free_speed_mph` emitted |
 | 5 | breakpoint clamp could duplicate values | spurious zero-length pieces | set-dedup |
+| 6 | verifier flagged access-denied middle stretches as "interior conservation gaps" (3 in Chicago) | verification false-positive, not a conversion loss | interval-disposition accounting: each middle stretch is `EXCLUDED_BY_ACCESS_RULE` (Overture denies motor-vehicle access there); verify distinguishes classified exclusions from unaccounted holes; 3 segments pinned as regression fixtures |
 
-Current state: 16/16 tests, wheel builds, clean-venv install verified,
-gmns-ready validate_network passes (0 errors).
+Current state (v0.2.0): 27/27 tests, wheel builds, clean-venv install
+verified, gmns-ready validate_network passes (0 errors). Source-to-output
+verification (`verify_conversion`) passes on Tempe and Chicago with zero
+unaccounted interior gaps; every candidate interval carries an explicit
+disposition and reconstructed link count reconciles exactly (Chicago 594,292).
 
 ## 3. osm2gmns: issues to report upstream (jiawlu/OSM2GMNS)
 
