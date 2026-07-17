@@ -69,9 +69,14 @@ for ax, metric, title in zip(axes, ("vmt", "vht"), ("VMT (vehicle-miles)", "VHT 
     ax.set_ylim(0, max(max(osm_v), max(ovr_v)) * 1.2)
     ax.ticklabel_format(axis="y", style="plain")
 axes[0].legend(loc="upper left", frameon=False, fontsize=10)
-fig.suptitle("Behavioral fidelity: identical demand, near-identical assignment",
-             fontsize=14, fontweight="bold", color=INK)
-fig.tight_layout(rect=(0, 0, 1, 0.95))
+fig.suptitle("Relative routing consistency: same synthetic demand on both networks",
+             fontsize=13.5, fontweight="bold", color=INK)
+fig.text(0.5, 0.005,
+         "Synthetic all-pairs demand + inferred capacity defaults (neither observed from OSM or "
+         "Overture). Isolates the network as the only variable — NOT a validated volume/time forecast. "
+         "VHT is more sensitive to these assumptions than VMT.",
+         ha="center", fontsize=7.5, color="#6b7280", style="italic", wrap=True)
+fig.tight_layout(rect=(0, 0.05, 1, 0.95))
 fig.savefig(FIG / "fig1_behavioral_fidelity.png"); plt.close(fig)
 
 # ---- Figure 2: semantic advantage (tokens) ---------------------------------

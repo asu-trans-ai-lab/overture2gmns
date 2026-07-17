@@ -16,16 +16,22 @@ Validated against osm2gmns (reference) and three agency planning models
 |---|---|---|
 | **GMNS validity** | 0 errors on all 5 networks | gmns-ready + dtalite_qa |
 | **Geometric agreement** | 0.89–0.93 length correlation with osm2gmns | ~500 m grid |
-| **Behavioral fidelity** | **VMT within 1%** under identical demand | TAPLite assignment |
+| **Routing consistency** \* | **VMT within 1%** under identical *synthetic* demand | TAPLite assignment |
 | **Topology** | *more* connected than osm2gmns (18 vs 22, 74 vs 91 components) | weak components |
 | **Semantic fidelity** | **3 system interchanges recovered vs 0** from osm2gmns | freeway tokens |
 | **Agency validation** | ARC & TRM model links **100% present**; NVTA 87% | map matching |
 
-![Behavioral fidelity](research/conversion_quality/figures/fig1_behavioral_fidelity.png)
+\* Relative check only: demand is synthetic (no observed OD) and capacity is an
+inferred class default (neither Overture nor OSM provides observed capacity).
+It isolates the network as the variable — not a validated volume forecast.
+VMT is robust; VHT is more assumption-sensitive.
 
-*Identical demand, near-identical assignment: the Overture-derived network
-routes within 1% VMT of the OSM-derived one in both a small city and a full
-metro.*
+![Relative routing consistency](research/conversion_quality/figures/fig1_behavioral_fidelity.png)
+
+*Same synthetic demand and same inferred capacity on both networks, so the
+converter output is the only variable: VMT stays within 1% in a small city and
+a full metro — the network representation does not shift where traffic goes.
+This is a controlled relative comparison, not a validated forecast.*
 
 ![Semantic advantage](research/conversion_quality/figures/fig2_semantic_advantage.png)
 

@@ -31,29 +31,39 @@ with broken directionality), so all six are reported separately.
 | 3 | Attribute fidelity | are speed/lanes/capacity/class right? | length-by-class, speed-by-class, capacity semantics |
 | 4 | Topological integrity | is connectivity and directionality correct? | weak components, one-way audit |
 | 5 | Semantic fidelity | are interchanges/ramps/managed lanes preserved? | interchange & ML tokens |
-| 6 | Behavioral fidelity | does it route the same under identical demand? | TAPLite VMT/VHT diff |
+| 6 | Routing consistency | does it route the same under *matched* (synthetic demand + inferred capacity) assumptions? | TAPLite VMT/VHT diff |
+
+> Dimension 6 is a **relative** check, not validation: there is no observed OD
+> and no observed capacity (neither data source provides capacity), so it
+> isolates the network as the variable rather than forecasting real volumes.
 
 ---
 
 ## 2. Headline verdict
 
-overture2gmns output is **GMNS-valid, geometrically faithful, and
-behaviorally interchangeable with osm2gmns** at the assignment level, and it
-**preserves semantic freeway structure that osm2gmns loses**. The one class
-of defects found during development were all in the *pipeline* (format
-round-trips, rule-scope handling, capacity units), not the source data, and
-all are fixed and regression-tested.
+overture2gmns output is **GMNS-valid, geometrically faithful, and routes
+consistently with osm2gmns under matched assumptions**, and it **preserves
+semantic freeway structure that osm2gmns loses**. The defects found during
+development were all in the *pipeline* (format round-trips, rule-scope
+handling, capacity units), not the source data, and all are fixed and
+regression-tested.
 
-| region | GMNS valid | geom corr (common cells) | VMT diff vs osm | verdict |
+| region | GMNS valid | geom corr (common cells) | VMT diff vs osm (synthetic demand) | verdict |
 |---|---|---:|---:|---|
-| Tempe | 0 errors | 0.89 | **-0.5%** | interchangeable |
-| Chicago metro | 0 errors | 0.93 | **-0.8%** | interchangeable |
+| Tempe | 0 errors | 0.89 | **-0.5%** | routes consistently |
+| Chicago metro | 0 errors | 0.93 | **-0.8%** | routes consistently |
 
-![Behavioral fidelity](figures/fig1_behavioral_fidelity.png)
+![Relative routing consistency](figures/fig1_behavioral_fidelity.png)
 
-*Identical demand assigned by TAPLite on both networks: VMT agrees to within
-1% in a small city and a full metro. This is the headline — at the level
-planners care about, the two converters are interchangeable.*
+> **What this does and does not show.** The demand is *synthetic* (all-pairs
+> among grid-sampled centroids) — there is **no observed OD** — and capacity
+> is an *inferred class default* in both networks, since **neither Overture
+> nor OSM provides observed capacity**. So this is a **controlled relative
+> comparison** that isolates the network as the only variable: same demand,
+> same capacity assumptions, only the converter output differs. A small VMT
+> gap therefore means the network representation itself does not cause routing
+> divergence. It is **not** a validated volume forecast, and **VHT is more
+> sensitive** to the capacity/demand assumptions than VMT (see §8).
 
 ---
 
@@ -110,11 +120,17 @@ Overture red). Red covering gray = agreement.*
 carries observed (TomTom-normalized) limits where present, marked
 `speed_source=overture`, vs class defaults elsewhere.
 
-**Capacity (fixed during this study):** the GMNS `capacity` column is TOTAL
-link capacity (osm2gmns and TAPLite kernel convention). overture2gmns
-initially wrote per-lane values (bug #3); after the fix, motorway reads
-2,200 pc/h/ln × lanes, consistent with osm2gmns (2,300) and the HCM base
-value. **Agency caution:** MWCOG/NVTA freeway capacities are ~950 vph/ln
+**Capacity — inferred in both, not from either source.** Neither Overture nor
+OSM provides observed link capacity, so *both* converters assign class
+defaults; this is a convention-correctness check, not a data-fidelity claim.
+The bug that was fixed (bug #3) was a *units* error: the GMNS `capacity`
+column is TOTAL link capacity (osm2gmns and TAPLite kernel convention) and
+overture2gmns initially wrote per-lane. After the fix, motorway reads
+2,200 pc/h/ln × lanes, matching the osm2gmns default (2,300) and the HCM base
+value — i.e., the two converters now use *consistent inferred defaults*, which
+is what makes the §8 relative comparison fair. Observed capacity (e.g., from
+INRIX speed-flow or agency tables) is a separate input neither tool has today.
+**Agency caution:** MWCOG/NVTA freeway capacities are ~950 vph/ln
 (period/service capacity) — a different quantity from HCM, never compared raw.
 
 **Class:** Overture promotes some OSM secondary mileage to primary
@@ -166,21 +182,37 @@ within ~9% on I-66 — comparable only at the token layer.
 **Conclusion:** for interchange, ramp, and managed-lane analysis,
 overture2gmns is materially higher-fidelity than an OSM-derived conversion.
 
-## 8. Dimension 6 — behavioral fidelity
+## 8. Dimension 6 — routing consistency (relative, not validated)
 
-Identical synthetic demand (all-pairs among grid-sampled zone centroids at
-the same physical locations in both networks) assigned by TAPLite:
+**Method and its limits.** Identical synthetic demand (all-pairs among
+grid-sampled zone centroids at the same physical locations in both networks)
+assigned by TAPLite. Two things are *assumed*, not measured, and both are
+held identical across the two networks so they cancel in the comparison:
+
+- **Demand is synthetic.** There is no observed OD matrix here; the demand is
+  fabricated. These numbers are not a volume forecast for either network.
+- **Capacity is inferred.** Neither Overture nor OSM provides observed
+  capacity — both networks use the same class-default capacities. VHT depends
+  on congested travel time, which depends on capacity × demand, so **ΔVHT is
+  partly an artifact of these shared assumptions, not the network data.**
+
+Because demand and capacity are identical on both sides, the *network* is the
+only thing that differs — so the diff measures whether the converter's
+topology/geometry causes routing to diverge, and nothing more.
 
 | region | osm VMT | ovr VMT | ΔVMT | osm VHT | ovr VHT | ΔVHT |
 |---|---:|---:|---:|---:|---:|---:|
 | Tempe | 194,211 | 193,279 | **-0.5%** | 6,227 | 6,199 | -0.4% |
 | Chicago | 561,481 | 557,219 | **-0.8%** | 18,770 | 19,230 | +2.5% |
 
-At the level MPOs care about — where traffic goes and how long it takes — the
-Overture-derived network reproduces the OSM-derived network within ~1% VMT in
-both a small city and a full metro. Chicago's +2.5% VHT is consistent with
-Overture's denser connector-level segmentation on arterials, not with missing
-or mis-coded facilities.
+**Read VMT, then VHT, with different confidence.** ΔVMT (path-length driven)
+is the robust signal: within ~1% in both a small city and a full metro, the
+network representation does not shift where traffic goes. ΔVHT is the
+assumption-sensitive one — Chicago's +2.5% reflects the interaction of
+Overture's denser connector-level segmentation with the *inferred* capacity
+and *synthetic* loading, and should not be read as a validated delay
+difference. **A true behavioral validation needs an observed OD matrix and
+observed (or agency) capacities** — that is future work, not claimed here.
 
 ## 9. Agency-model validation (external ground truth)
 

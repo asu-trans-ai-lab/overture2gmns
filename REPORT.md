@@ -46,19 +46,28 @@ gmns-ready validate_network passes (0 errors).
 
 None of these block use; #1 matters most for interchange/managed-lane work.
 
-## 4. Converter-vs-converter results (identical area, modes, demand)
+## 4. Converter-vs-converter results (identical area and modes)
 
 | metric | Tempe | Chicago metro |
 |---|---:|---:|
 | grid length correlation (common ~500 m cells) | 0.89 | 0.93 |
 | drivable length diff (ovr vs osm) | +9.0% | +12.6% (bbox fringe) |
-| TAPLite ΔVMT, identical demand | **−0.5%** | **−0.8%** |
-| TAPLite ΔVHT | −0.4% | +2.5% |
+| TAPLite ΔVMT, *synthetic* demand | **−0.5%** | **−0.8%** |
+| TAPLite ΔVHT, *synthetic* demand | −0.4% | +2.5% |
 | weak components (fewer better) | 18 vs 22 | 74 vs 91 |
 | map-match ovr→osm / osm→ovr | 87.8% / **99.3%** | — |
 
-Conclusion: behaviorally interchangeable at the assignment level; Overture ⊃
-OSM in coverage; semantic ramp information survives only in Overture.
+The assignment rows are a **relative** check, not a forecast: demand is
+synthetic (no observed OD) and capacity is an inferred class default (neither
+Overture nor OSM provides capacity), held identical on both networks so the
+converter output is the only variable. ΔVMT (robust, path-length driven)
+shows routing does not diverge; ΔVHT is assumption-sensitive and not a
+validated delay difference.
+
+Conclusion: **routes consistently under matched assumptions** at the
+assignment level; Overture ⊃ OSM in coverage; semantic ramp information
+survives only in Overture. A true behavioral validation (observed OD +
+capacity) is future work.
 
 ## 5. Planning-model QA (ARC, TRMG2, NVTA)
 
