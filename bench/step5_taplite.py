@@ -184,14 +184,20 @@ def build_scenario(
             # fixed 2026-07-17 — it previously wrote per-lane, and this step
             # multiplied by lanes, double-counting the osm side).
             capacity = _f(row.get("capacity"), 1000.0 * lanes) or 1000.0 * lanes
+            # Prefer the explicit dual-unit columns when present (agency
+            # networks and overture2gmns both emit them); this is unit-safe
+            # regardless of the raw length/free_speed units. Fall back to the
+            # tool-scaled raw columns (osm2gmns: meters + km/h).
+            miles = _f(row.get("vdf_length_mi")) or _f(row.get("length")) * length_scale / METERS_PER_MILE
+            mph = _f(row.get("vdf_free_speed_mph")) or _f(row.get("free_speed"), 25.0) * speed_scale
             writer.writerow([
                 index,
                 renumber[str(row["from_node_id"])],
                 renumber[str(row["to_node_id"])],
-                round(_f(row.get("length")) * length_scale, 6),
+                round(miles * METERS_PER_MILE, 6),   # kernel wants meters
                 lanes,
                 round(capacity, 1),
-                round(_f(row.get("free_speed"), 25.0) * speed_scale, 1),
+                round(mph or 25.0, 1),
                 1,
             ])
 

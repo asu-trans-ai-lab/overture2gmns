@@ -1,0 +1,29 @@
+{
+  "trmg2_agency": {
+    "zones": 25,
+    "scc_nodes": 33950,
+    "links": 75939,
+    "assignment_output": true,
+    "vmt": 774590.0,
+    "vht": 23088.0,
+    "total_link_volume": 3371728.0,
+    "max_doc": 0.762
+  },
+  "trm_overture": {
+    "zones": 25,
+    "scc_nodes": 170372,
+    "links": 353574,
+    "assignment_output": true,
+    "vmt": 795234.0,
+    "vht": 24779.0,
+    "total_link_volume": 7926611.0,
+    "max_doc": 1.2
+  },
+  "_diff": {
+    "vmt_diff_pct": 2.7,
+    "vht_diff_pct": 7.3,
+    "reference": "trmg2_agency",
+    "candidate": "trm_overture",
+    "zones": 25
+  }
+}

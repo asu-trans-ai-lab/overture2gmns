@@ -205,6 +205,57 @@ topology/geometry causes routing to diverge, and nothing more.
 | Tempe | 194,211 | 193,279 | **-0.5%** | 6,227 | 6,199 | -0.4% |
 | Chicago | 561,481 | 557,219 | **-0.8%** | 18,770 | 19,230 | +2.5% |
 
+### Methodology — how VMT and VHT are computed and checked
+
+1. **Demand.** 25 zone centroids are grid-sampled at *identical physical
+   locations*, then snapped into each network's largest strongly connected
+   component so every OD pair is routable. An all-pairs synthetic OD matrix
+   with a fixed volume per pair is generated once and used **byte-identically**
+   on both networks.
+2. **Assignment.** Static user-equilibrium (Frank–Wolfe) via the
+   TAPLite/DTALite kernel, BPR volume-delay functions, fixed iteration count.
+3. **Aggregates.** `VMT = Σ_links (volume × length_mi)` and
+   `VHT = Σ_links (volume × travel_time_hr)`, summed from the kernel's
+   `link_performance.csv` (system totals).
+4. **Units.** The kernel expects length in meters and free-flow speed in mph.
+   The scenario builder prefers the explicit `vdf_length_mi` /
+   `vdf_free_speed_mph` dual columns (present in agency and overture2gmns
+   networks; e.g. TRMG2's `free_speed` is km/h but `vdf_free_speed_mph` is the
+   modeled value), falling back to unit-scaled raw columns for osm2gmns.
+5. **The check.** With demand and zone locations held identical, ΔVMT and ΔVHT
+   isolate the effect of the *differing network*. **ΔVMT is path-length driven
+   and robust; ΔVHT additionally depends on coded speed and capacity.**
+
+**What it controls / does not.** For osm2gmns-vs-overture2gmns, capacity and
+speed come from near-identical class defaults, so network topology/geometry is
+effectively the only variable. For agency-vs-Overture (below) the networks
+*also* differ in coded speed, capacity, and facility type, so ΔVMT is the
+interpretable signal and ΔVHT absorbs those coding differences too. Neither
+case is a validated forecast — there is no observed OD, and capacity is
+inferred (§8 opening).
+
+### Agency-model check — TRMG2 (Triangle, NC)
+
+The same identical-demand procedure, now comparing the open
+overture2gmns Triangle network against the **agency TRMG2 model network**
+(an independently built, TransCAD-sourced planning network):
+
+| network | links | VMT | VHT | max v/c |
+|---|---:|---:|---:|---:|
+| agency TRMG2 (reference) | 75,939 | 774,590 | 23,088 | 0.76 |
+| overture2gmns Triangle | 353,574 | 795,234 | 24,779 | 1.20 |
+| **Δ (Overture vs agency)** | | **+2.7%** | **+7.3%** | |
+
+Under identical synthetic demand between the same 25 zone locations, the open
+Overture-derived network reproduces the agency model's aggregate **VMT within
+2.7%** and **VHT within 7.3%** — a strong reasonableness result for two
+networks built by completely different pipelines. The wider VHT gap is
+expected: the Overture network runs more congested (max v/c 1.20 vs 0.76)
+because its inferred, HCM-like per-lane capacity differs from the agency's
+period/service capacity (~950 vph/ln), so VHT absorbs that capacity-coding
+difference on top of any topology difference. This is an external
+*reasonableness* comparison, not a controlled network-isolation experiment.
+
 **Read VMT, then VHT, with different confidence.** ΔVMT (path-length driven)
 is the robust signal: within ~1% in both a small city and a full metro, the
 network representation does not shift where traffic goes. ΔVHT is the
