@@ -2,6 +2,37 @@
 
 `overture2gmns` is an alpha Python package that converts the Overture Maps transportation theme into a GMNS road network. Its user-facing API intentionally mirrors [`osm2gmns`](https://github.com/jiawlu/OSM2GMNS), while its topology engine is designed around Overture's native `segment` and `connector` model.
 
+```bash
+pip install overture2gmns
+```
+
+## Conversion quality at a glance
+
+Validated against osm2gmns (reference) and three agency planning models
+(ARC Atlanta, TRMG2, NVTA). Full evidence:
+[research/conversion_quality/](research/conversion_quality/).
+
+| quality dimension | result | evidence |
+|---|---|---|
+| **GMNS validity** | 0 errors on all 5 networks | gmns-ready + dtalite_qa |
+| **Geometric agreement** | 0.89–0.93 length correlation with osm2gmns | ~500 m grid |
+| **Behavioral fidelity** | **VMT within 1%** under identical demand | TAPLite assignment |
+| **Topology** | *more* connected than osm2gmns (18 vs 22, 74 vs 91 components) | weak components |
+| **Semantic fidelity** | **3 system interchanges recovered vs 0** from osm2gmns | freeway tokens |
+| **Agency validation** | ARC & TRM model links **100% present**; NVTA 87% | map matching |
+
+![Behavioral fidelity](research/conversion_quality/figures/fig1_behavioral_fidelity.png)
+
+*Identical demand, near-identical assignment: the Overture-derived network
+routes within 1% VMT of the OSM-derived one in both a small city and a full
+metro.*
+
+![Semantic advantage](research/conversion_quality/figures/fig2_semantic_advantage.png)
+
+*Where the converters differ: osm2gmns collapses ramp types into `motorway`,
+so no freeway system interchange is recoverable — Overture's `subclass=link`
+survives, and overture2gmns detects all three Tempe system interchanges.*
+
 ## Why a separate converter is needed
 
 Overture differs materially from raw OSM:

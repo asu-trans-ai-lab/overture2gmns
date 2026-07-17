@@ -49,6 +49,12 @@ all are fixed and regression-tested.
 | Tempe | 0 errors | 0.89 | **-0.5%** | interchangeable |
 | Chicago metro | 0 errors | 0.93 | **-0.8%** | interchangeable |
 
+![Behavioral fidelity](figures/fig1_behavioral_fidelity.png)
+
+*Identical demand assigned by TAPLite on both networks: VMT agrees to within
+1% in a small city and a full metro. This is the headline — at the level
+planners care about, the two converters are interchangeable.*
+
 ---
 
 ## 3. Dimension 1 — GMNS validity
@@ -86,6 +92,17 @@ the Overture pull is a bounding rectangle (extra Overture coverage at bbox
 corners). Map-matching confirms directionally: **osm2gmns links match onto
 the overture2gmns network at 99.3%** (Tempe) — everything OSM has, Overture
 has and places within tolerance.
+
+![Geometry and topology](figures/fig4_geometry_topology.png)
+
+The two converters describe the same streets (left), and the
+overture2gmns network is *more* connected — fewer disconnected components
+(right). Visual overlay of the full networks:
+
+![Tempe networks side by side](figures/map_tempe_side_by_side.png)
+
+*Tempe: osm2gmns (left), overture2gmns (center), overlay (right, OSM gray /
+Overture red). Red covering gray = agreement.*
 
 ## 5. Dimension 3 — attribute fidelity
 
@@ -133,10 +150,15 @@ detect that a converter collapsed freeway-to-freeway ramps. The token layer
 | ramp links | 188 (heuristic) | 507 |
 | **system interchanges detected** | **0** | **3** |
 
+![Semantic advantage](figures/fig2_semantic_advantage.png)
+
 osm2gmns collapses `motorway_link` into `motorway` (its known facility_type
 limitation), so freeway-to-freeway ramps are unrecoverable and **no system
 interchange is detectable** — despite the two networks agreeing geometrically
-at 87-99%. Overture's explicit `subclass=link` survives conversion.
+at 87-99%. Overture's explicit `subclass=link` survives conversion. The
+interchange motifs, validated against aerials:
+
+![Tempe interchange tokens](figures/map_tempe_tokens.png)
 Managed-lane tokens extend this: Overture's named express-lane facilities
 (I-66/495/95 Express) reconcile with NVTA's PMLIMIT-restricted coding to
 within ~9% on I-66 — comparable only at the token layer.
@@ -171,6 +193,8 @@ test whether Overture contains the agency's coded facilities:
 | ARC Atlanta | 100% | 100% (all 11 classes) | 100% | ok |
 | TRMG2 | 100% | 100% (all 9 classes) | 100% | ok |
 | NVTA | 87% | FTYPE 1-3: 97-100% | FTYPE 4-6: 73-77% | ok |
+
+![Agency validation](figures/fig3_agency_validation.png)
 
 Every facility the ARC and TRM models code — including managed lanes and
 ramps — exists in the Overture conversion. NVTA's lower rate is a
