@@ -1,0 +1,24 @@
+{
+  "network": "nvta",
+  "label": "NVTA (Northern Virginia) PM 6-mode network (MWCOG-derived)",
+  "nodes": 17754,
+  "links": 49329,
+  "zones": 3858,
+  "centroid_connectors": 15986,
+  "connector_share_of_links": 0.3241,
+  "total_length_mi": 24638.0,
+  "connector_length_mi": 8828.0,
+  "roadway_length_by_class_mi": {
+    "1": 1545.0,
+    "2": 2562.0,
+    "3": 5585.0,
+    "4": 5517.0,
+    "5": 384.0,
+    "6": 217.0
+  },
+  "units": {
+    "length": "mile",
+    "speed": "kmh",
+    "crs_epsg": 2248
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "network": "arc_atlanta",
+  "label": "ARC (Atlanta Regional Commission) activity-based model network",
+  "nodes": 66546,
+  "links": 145971,
+  "zones": 6031,
+  "centroid_connectors": 27066,
+  "connector_share_of_links": 0.1854,
+  "total_length_mi": 32928.0,
+  "connector_length_mi": 11910.0,
+  "roadway_length_by_class_mi": {
+    "0": 1.0,
+    "1": 927.0,
+    "10": 1924.0,
+    "11": 5425.0,
+    "14": 11849.0,
+    "2": 50.0,
+    "3": 163.0,
+    "4": 128.0,
+    "5": 44.0,
+    "7": 202.0,
+    "8": 150.0,
+    "9": 155.0
+  },
+  "units": {
+    "length": "meter",
+    "speed": "kmh",
+    "crs_epsg": 2240
+  }
+}

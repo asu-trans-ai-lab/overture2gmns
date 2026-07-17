@@ -1,0 +1,27 @@
+{
+  "network": "trm_triangle",
+  "label": "TRMG2 (Triangle Regional Model G2, NC) network",
+  "nodes": 33963,
+  "links": 75939,
+  "zones": 3247,
+  "centroid_connectors": 12366,
+  "connector_share_of_links": 0.1628,
+  "total_length_mi": 16292.0,
+  "connector_length_mi": 4866.0,
+  "roadway_length_by_class_mi": {
+    "Arterial": 3401.0,
+    "Collector": 2938.0,
+    "Freeway": 640.0,
+    "Local": 1917.0,
+    "MLHighway": 257.0,
+    "MajorArterial": 853.0,
+    "MajorCollector": 768.0,
+    "Ramp": 262.0,
+    "TLHighway": 389.0
+  },
+  "units": {
+    "length": "mile",
+    "speed": "kmh",
+    "crs_epsg": 4326
+  }
+}

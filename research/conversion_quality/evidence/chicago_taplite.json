@@ -1,0 +1,34 @@
+{
+  "osm2gmns": {
+    "scenario": "C:\\source_codes\\0_source_code_new\\overture2gmns\\bench\\out\\chicago\\tap_osm2gmns",
+    "zones": 24,
+    "scc_nodes": 99106,
+    "links": 239760,
+    "qa_ok": true,
+    "qa_access_problems": 0,
+    "qa_errors": [],
+    "qa_warnings": [],
+    "returncode": 0,
+    "assignment_output": true,
+    "vmt": 561481.0,
+    "vht": 18770.0,
+    "total_link_volume": 6210583.0,
+    "max_doc": 1.438
+  },
+  "overture2gmns": {
+    "scenario": "C:\\source_codes\\0_source_code_new\\overture2gmns\\bench\\out\\chicago\\tap_overture2gmns",
+    "zones": 24,
+    "scc_nodes": 300040,
+    "links": 594292,
+    "qa_ok": true,
+    "qa_access_problems": 0,
+    "qa_errors": [],
+    "qa_warnings": [],
+    "returncode": 0,
+    "assignment_output": true,
+    "vmt": 557219.0,
+    "vht": 19230.0,
+    "total_link_volume": 9078633.0,
+    "max_doc": 1.521
+  }
+}

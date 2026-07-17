@@ -1,0 +1,147 @@
+{
+  "region": "chicago",
+  "osm2gmns": {
+    "tool": "osm2gmns",
+    "meta": {
+      "tool": "osm2gmns",
+      "version": "1.0.1",
+      "source": "C:\\source_codes\\0_source_code_new\\overture2gmns\\dev\\osmmap\\chicago.osm.pbf",
+      "modes": [
+        "auto"
+      ],
+      "link_types": [
+        "motorway",
+        "trunk",
+        "primary",
+        "secondary",
+        "tertiary",
+        "residential",
+        "unclassified",
+        "living_street",
+        "motorway_link",
+        "trunk_link",
+        "primary_link",
+        "secondary_link",
+        "tertiary_link"
+      ],
+      "nodes": 99991,
+      "links": 239760,
+      "seconds": 4.9
+    },
+    "nodes": 99991,
+    "links": 239760,
+    "total_length_mi": 17680.2,
+    "length_by_class_mi": {
+      "living": 0.0,
+      "motorway": 673.1,
+      "primary": 720.0,
+      "residential": 12190.8,
+      "secondary": 1999.2,
+      "tertiary": 1706.9,
+      "trunk": 84.9,
+      "unclassified": 305.3
+    },
+    "mean_speed_mph_by_class": {
+      "secondary": 36.1,
+      "tertiary": 25.7,
+      "residential": 19.2,
+      "motorway": 62.7,
+      "unclassified": 20.2,
+      "primary": 43.5,
+      "trunk": 49.5,
+      "living": 18.6
+    },
+    "mean_lanes_by_class": {
+      "secondary": 1.99,
+      "tertiary": 1.84,
+      "residential": 1.0,
+      "motorway": 3.05,
+      "unclassified": 1.06,
+      "primary": 2.42,
+      "trunk": 2.91,
+      "living": 1.0
+    },
+    "mean_out_degree": 2.4,
+    "weak_components": 91,
+    "largest_component_share": 0.9971
+  },
+  "overture2gmns": {
+    "tool": "overture2gmns",
+    "meta": {
+      "tool": "overture2gmns",
+      "version": "0.1.0",
+      "bbox": [
+        -88.0292698,
+        41.6254569,
+        -87.4132437,
+        42.1028223
+      ],
+      "modes": [
+        "auto"
+      ],
+      "link_types": [
+        "motorway",
+        "trunk",
+        "primary",
+        "secondary",
+        "tertiary",
+        "residential",
+        "unclassified",
+        "living_street",
+        "motorway_link",
+        "trunk_link",
+        "primary_link",
+        "secondary_link",
+        "tertiary_link"
+      ],
+      "nodes": 301861,
+      "links": 594292,
+      "download_seconds": 200.07,
+      "convert_seconds": 118.3
+    },
+    "nodes": 301861,
+    "links": 594292,
+    "total_length_mi": 19901.0,
+    "length_by_class_mi": {
+      "living_street": 12.7,
+      "motorway": 828.5,
+      "primary": 759.8,
+      "residential": 13756.5,
+      "secondary": 2204.6,
+      "tertiary": 1850.7,
+      "trunk": 115.0,
+      "unclassified": 373.1
+    },
+    "mean_speed_mph_by_class": {
+      "residential": 24.8,
+      "tertiary": 29.8,
+      "primary": 41.5,
+      "secondary": 34.6,
+      "motorway": 59.5,
+      "unclassified": 25.6,
+      "trunk": 47.7,
+      "living_street": 15.2
+    },
+    "mean_lanes_by_class": {
+      "residential": 1.0,
+      "tertiary": 1.0,
+      "primary": 2.0,
+      "secondary": 1.0,
+      "motorway": 2.0,
+      "unclassified": 1.0,
+      "trunk": 2.0,
+      "living_street": 1.0
+    },
+    "mean_out_degree": 1.97,
+    "weak_components": 74,
+    "largest_component_share": 0.9985
+  },
+  "grid": {
+    "cells_osm_only": 24,
+    "cells_overture_only": 1077,
+    "cells_common": 6865,
+    "coverage_jaccard": 0.8618,
+    "correlation_union": 0.8006,
+    "correlation_common": 0.9298
+  }
+}

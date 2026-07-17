@@ -1,0 +1,313 @@
+{
+  "generated_by": "aggregate_qaqc.py",
+  "regions": {
+    "tempe": {
+      "kind": "converter_vs_converter",
+      "structure": {
+        "osm_nodes": 11208,
+        "ovr_nodes": 25689,
+        "osm_links": 23548,
+        "ovr_links": 51342,
+        "osm_length_mi": 1621.4,
+        "ovr_length_mi": 1767.9,
+        "grid_corr_common": 0.8934,
+        "grid_corr_union": 0.9052,
+        "coverage_jaccard": 0.9428,
+        "osm_weak_components": 22,
+        "ovr_weak_components": 18,
+        "length_by_class": {
+          "osm": {
+            "motorway": 131.3,
+            "primary": 42.9,
+            "residential": 997.2,
+            "secondary": 218.2,
+            "tertiary": 136.7,
+            "unclassified": 95.1
+          },
+          "ovr": {
+            "living_street": 5.7,
+            "motorway": 155.9,
+            "primary": 76.6,
+            "residential": 1067.3,
+            "secondary": 191.8,
+            "tertiary": 150.7,
+            "unclassified": 119.9
+          }
+        },
+        "speed_by_class": {
+          "osm": {
+            "residential": 21.4,
+            "tertiary": 26.3,
+            "motorway": 68.3,
+            "secondary": 39.9,
+            "primary": 41.7,
+            "unclassified": 20.7
+          },
+          "ovr": {
+            "tertiary": 29.4,
+            "residential": 25.0,
+            "secondary": 38.7,
+            "motorway": 63.5,
+            "primary": 42.2,
+            "unclassified": 25.3,
+            "living_street": 10.8
+          }
+        }
+      },
+      "behavior": {
+        "osm_vmt": 194211.0,
+        "ovr_vmt": 193279.0,
+        "osm_vht": 6227.0,
+        "ovr_vht": 6199.0,
+        "vmt_diff_pct": -0.5,
+        "vht_diff_pct": -0.4,
+        "osm_qa_ok": true,
+        "ovr_qa_ok": true
+      },
+      "gmns_ready": {
+        "quick_check": {
+          "errors": 0
+        },
+        "validate_network": {
+          "errors": 0
+        }
+      },
+      "mapmatch": {
+        "ovr_to_osm": {
+          "trace_match_rate": 0.878,
+          "traces": 156
+        },
+        "osm_to_ovr": {
+          "trace_match_rate": 0.993,
+          "traces": 150
+        }
+      }
+    },
+    "chicago": {
+      "kind": "converter_vs_converter",
+      "structure": {
+        "osm_nodes": 99991,
+        "ovr_nodes": 301861,
+        "osm_links": 239760,
+        "ovr_links": 594292,
+        "osm_length_mi": 17680.2,
+        "ovr_length_mi": 19901.0,
+        "grid_corr_common": 0.9298,
+        "grid_corr_union": 0.8006,
+        "coverage_jaccard": 0.8618,
+        "osm_weak_components": 91,
+        "ovr_weak_components": 74,
+        "length_by_class": {
+          "osm": {
+            "living": 0.0,
+            "motorway": 673.1,
+            "primary": 720.0,
+            "residential": 12190.8,
+            "secondary": 1999.2,
+            "tertiary": 1706.9,
+            "trunk": 84.9,
+            "unclassified": 305.3
+          },
+          "ovr": {
+            "living_street": 12.7,
+            "motorway": 828.5,
+            "primary": 759.8,
+            "residential": 13756.5,
+            "secondary": 2204.6,
+            "tertiary": 1850.7,
+            "trunk": 115.0,
+            "unclassified": 373.1
+          }
+        },
+        "speed_by_class": {
+          "osm": {
+            "secondary": 36.1,
+            "tertiary": 25.7,
+            "residential": 19.2,
+            "motorway": 62.7,
+            "unclassified": 20.2,
+            "primary": 43.5,
+            "trunk": 49.5,
+            "living": 18.6
+          },
+          "ovr": {
+            "residential": 24.8,
+            "tertiary": 29.8,
+            "primary": 41.5,
+            "secondary": 34.6,
+            "motorway": 59.5,
+            "unclassified": 25.6,
+            "trunk": 47.7,
+            "living_street": 15.2
+          }
+        }
+      },
+      "behavior": {
+        "osm_vmt": 561481.0,
+        "ovr_vmt": 557219.0,
+        "osm_vht": 18770.0,
+        "ovr_vht": 19230.0,
+        "vmt_diff_pct": -0.8,
+        "vht_diff_pct": 2.5,
+        "osm_qa_ok": true,
+        "ovr_qa_ok": true
+      },
+      "gmns_ready": {
+        "quick_check": {
+          "errors": 2
+        },
+        "validate_network": {
+          "errors": 0
+        }
+      }
+    },
+    "arc_atlanta": {
+      "kind": "mpo_validation",
+      "structure": {
+        "label": "ARC (Atlanta Regional Commission) activity-based model network",
+        "nodes": 66546,
+        "links": 145971,
+        "zones": 6031,
+        "centroid_connectors": 27066,
+        "connector_share_of_links": 0.1854,
+        "total_length_mi": 32928.0,
+        "units": {
+          "length": "meter",
+          "speed": "kmh",
+          "crs_epsg": 2240
+        }
+      },
+      "dtalite_qa_ok": true,
+      "gmns_ready": {
+        "quick_check": {
+          "errors": 1
+        },
+        "validate_network": {
+          "errors": 0
+        }
+      },
+      "mapmatch_model_to_overture": {
+        "overall": 1.0,
+        "per_class": {
+          "1": 1.0,
+          "10": 1.0,
+          "11": 1.0,
+          "14": 1.0,
+          "2": 1.0,
+          "3": 1.0,
+          "4": 1.0,
+          "5": 1.0,
+          "7": 1.0,
+          "8": 1.0,
+          "9": 1.0
+        }
+      },
+      "mapmatch_overture_to_model": {
+        "overall": 0.726
+      }
+    },
+    "trm_triangle": {
+      "kind": "mpo_validation",
+      "structure": {
+        "label": "TRMG2 (Triangle Regional Model G2, NC) network",
+        "nodes": 33963,
+        "links": 75939,
+        "zones": 3247,
+        "centroid_connectors": 12366,
+        "connector_share_of_links": 0.1628,
+        "total_length_mi": 16292.0,
+        "units": {
+          "length": "mile",
+          "speed": "kmh",
+          "crs_epsg": 4326
+        }
+      },
+      "dtalite_qa_ok": true,
+      "gmns_ready": {
+        "quick_check": {
+          "errors": 0
+        },
+        "validate_network": {
+          "errors": 0
+        }
+      },
+      "mapmatch_model_to_overture": {
+        "overall": 1.0,
+        "per_class": {
+          "arterial": 1.0,
+          "collector": 1.0,
+          "freeway": 1.0,
+          "local": 1.0,
+          "majorarterial": 1.0,
+          "majorcollector": 1.0,
+          "mlhighway": 1.0,
+          "ramp": 1.0,
+          "tlhighway": 1.0
+        }
+      },
+      "mapmatch_overture_to_model": {
+        "overall": 0.694
+      }
+    },
+    "nvta": {
+      "kind": "mpo_validation",
+      "structure": {
+        "label": "NVTA (Northern Virginia) PM 6-mode network (MWCOG-derived)",
+        "nodes": 17754,
+        "links": 49329,
+        "zones": 3858,
+        "centroid_connectors": 15986,
+        "connector_share_of_links": 0.3241,
+        "total_length_mi": 24638.0,
+        "units": {
+          "length": "mile",
+          "speed": "kmh",
+          "crs_epsg": 2248
+        }
+      },
+      "dtalite_qa_ok": true,
+      "gmns_ready": {
+        "quick_check": {
+          "errors": 0
+        },
+        "validate_network": {
+          "errors": 0
+        }
+      },
+      "mapmatch_model_to_overture": {
+        "overall": 0.867,
+        "per_class": {
+          "1": 0.967,
+          "2": 1.0,
+          "3": 0.967,
+          "4": 0.733,
+          "5": 0.767,
+          "6": 0.767
+        }
+      },
+      "mapmatch_overture_to_model": {
+        "overall": 0.439
+      }
+    }
+  },
+  "token_semantics_tempe": {
+    "osm": {
+      "junctions": {
+        "DIVERGE": 35,
+        "MERGE": 35,
+        "MERGE_DIVERGE": 4
+      },
+      "system_interchanges": 0,
+      "ramp_links": 188,
+      "osm_ramp_heuristic": true
+    },
+    "ovr": {
+      "junctions": {
+        "MERGE": 80,
+        "DIVERGE": 79
+      },
+      "system_interchanges": 3,
+      "ramp_links": 507
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "osm2gmns": {
+    "scenario": "C:\\source_codes\\0_source_code_new\\overture2gmns\\bench\\out\\tempe\\tap_osm2gmns",
+    "zones": 25,
+    "scc_nodes": 10886,
+    "links": 23548,
+    "qa_ok": true,
+    "qa_access_problems": 0,
+    "qa_errors": [],
+    "qa_warnings": [],
+    "returncode": 0,
+    "assignment_output": true,
+    "vmt": 194211.0,
+    "vht": 6227.0,
+    "total_link_volume": 2281089.0,
+    "max_doc": 1.347
+  },
+  "overture2gmns": {
+    "scenario": "C:\\source_codes\\0_source_code_new\\overture2gmns\\bench\\out\\tempe\\tap_overture2gmns",
+    "zones": 25,
+    "scc_nodes": 25207,
+    "links": 51342,
+    "qa_ok": true,
+    "qa_access_problems": 0,
+    "qa_errors": [],
+    "qa_warnings": [],
+    "returncode": 0,
+    "assignment_output": true,
+    "vmt": 193279.0,
+    "vht": 6199.0,
+    "total_link_volume": 3136001.0,
+    "max_doc": 1.313
+  }
+}

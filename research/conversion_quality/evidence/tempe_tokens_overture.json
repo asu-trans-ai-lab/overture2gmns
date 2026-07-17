@@ -1,0 +1,5760 @@
+{
+ "network": "tempe_overture",
+ "folder": "bench\\out\\tempe\\overture2gmns",
+ "mainline_links": 299,
+ "ramp_links": 507,
+ "osm_ramp_heuristic": false,
+ "histogram": {
+  "junctions": {
+   "MERGE": 80,
+   "DIVERGE": 79
+  },
+  "ramps": {
+   "RAMP_DIRECTIONAL(SERVICE)": 189,
+   "RAMP_DIRECTIONAL(FF)": 27,
+   "RAMP_LOOP(FF)": 1,
+   "RAMP_LOOP(SERVICE)": 1,
+   "RAMP_SEMI_DIRECT(SERVICE)": 1
+  },
+  "interchanges": {
+   "PARTIAL_G3": 7,
+   "SERVICE_G6": 2,
+   "PARTIAL_G2": 7,
+   "MAJOR_SERVICE_G27": 1,
+   "SYSTEM_DIRECTIONAL": 2,
+   "DIAMOND_LIKE_G4": 7,
+   "PARCLO_G20": 1,
+   "SYSTEM_HYBRID": 1,
+   "SLIP_RAMP": 3,
+   "MAJOR_SERVICE_G11": 1,
+   "SERVICE_G5": 2
+  }
+ },
+ "interchanges": [
+  {
+   "token": "MAJOR_SERVICE_G27",
+   "gores": 27,
+   "chains": 27,
+   "loops": 0,
+   "ff_ramps": 7,
+   "xy": [
+    -111.96336,
+    33.38551
+   ],
+   "total_ramp_miles": 12.74
+  },
+  {
+   "token": "PARCLO_G20",
+   "gores": 20,
+   "chains": 37,
+   "loops": 1,
+   "ff_ramps": 4,
+   "xy": [
+    -111.97641,
+    33.41325
+   ],
+   "total_ramp_miles": 7.71
+  },
+  {
+   "token": "MAJOR_SERVICE_G11",
+   "gores": 11,
+   "chains": 11,
+   "loops": 0,
+   "ff_ramps": 2,
+   "xy": [
+    -111.96688,
+    33.4398
+   ],
+   "total_ramp_miles": 4.21
+  },
+  {
+   "token": "SYSTEM_HYBRID",
+   "gores": 10,
+   "chains": 8,
+   "loops": 1,
+   "ff_ramps": 3,
+   "xy": [
+    -111.9803,
+    33.43771
+   ],
+   "total_ramp_miles": 2.96
+  },
+  {
+   "token": "SYSTEM_DIRECTIONAL",
+   "gores": 8,
+   "chains": 6,
+   "loops": 0,
+   "ff_ramps": 3,
+   "xy": [
+    -111.91261,
+    33.38579
+   ],
+   "total_ramp_miles": 3.98
+  },
+  {
+   "token": "SERVICE_G6",
+   "gores": 6,
+   "chains": 6,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.97221,
+    33.30808
+   ],
+   "total_ramp_miles": 3.31
+  },
+  {
+   "token": "SERVICE_G6",
+   "gores": 6,
+   "chains": 6,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.89114,
+    33.39828
+   ],
+   "total_ramp_miles": 3.39
+  },
+  {
+   "token": "SYSTEM_DIRECTIONAL",
+   "gores": 5,
+   "chains": 3,
+   "loops": 0,
+   "ff_ramps": 2,
+   "xy": [
+    -111.97217,
+    33.32671
+   ],
+   "total_ramp_miles": 2.01
+  },
+  {
+   "token": "SERVICE_G5",
+   "gores": 5,
+   "chains": 4,
+   "loops": 0,
+   "ff_ramps": 1,
+   "xy": [
+    -111.89087,
+    33.44505
+   ],
+   "total_ramp_miles": 1.52
+  },
+  {
+   "token": "SERVICE_G5",
+   "gores": 5,
+   "chains": 7,
+   "loops": 0,
+   "ff_ramps": 1,
+   "xy": [
+    -111.88832,
+    33.38595
+   ],
+   "total_ramp_miles": 3.96
+  },
+  {
+   "token": "DIAMOND_LIKE_G4",
+   "gores": 4,
+   "chains": 4,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.89436,
+    33.31301
+   ],
+   "total_ramp_miles": 1.37
+  },
+  {
+   "token": "DIAMOND_LIKE_G4",
+   "gores": 4,
+   "chains": 4,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.89331,
+    33.32748
+   ],
+   "total_ramp_miles": 1.32
+  },
+  {
+   "token": "DIAMOND_LIKE_G4",
+   "gores": 4,
+   "chains": 4,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.89337,
+    33.34214
+   ],
+   "total_ramp_miles": 1.47
+  },
+  {
+   "token": "DIAMOND_LIKE_G4",
+   "gores": 4,
+   "chains": 4,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.8944,
+    33.35643
+   ],
+   "total_ramp_miles": 1.36
+  },
+  {
+   "token": "DIAMOND_LIKE_G4",
+   "gores": 4,
+   "chains": 4,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.89358,
+    33.37093
+   ],
+   "total_ramp_miles": 1.33
+  },
+  {
+   "token": "DIAMOND_LIKE_G4",
+   "gores": 4,
+   "chains": 13,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.92374,
+    33.43607
+   ],
+   "total_ramp_miles": 1.85
+  },
+  {
+   "token": "DIAMOND_LIKE_G4",
+   "gores": 4,
+   "chains": 4,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.89134,
+    33.41546
+   ],
+   "total_ramp_miles": 1.33
+  },
+  {
+   "token": "PARTIAL_G3",
+   "gores": 3,
+   "chains": 6,
+   "loops": 0,
+   "ff_ramps": 1,
+   "xy": [
+    -111.97205,
+    33.29752
+   ],
+   "total_ramp_miles": 4.57
+  },
+  {
+   "token": "PARTIAL_G3",
+   "gores": 3,
+   "chains": 2,
+   "loops": 0,
+   "ff_ramps": 1,
+   "xy": [
+    -111.97097,
+    33.35461
+   ],
+   "total_ramp_miles": 1.09
+  },
+  {
+   "token": "PARTIAL_G3",
+   "gores": 3,
+   "chains": 2,
+   "loops": 0,
+   "ff_ramps": 1,
+   "xy": [
+    -111.97224,
+    33.34136
+   ],
+   "total_ramp_miles": 1.17
+  },
+  {
+   "token": "PARTIAL_G3",
+   "gores": 3,
+   "chains": 7,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.94801,
+    33.43627
+   ],
+   "total_ramp_miles": 1.73
+  },
+  {
+   "token": "PARTIAL_G3",
+   "gores": 3,
+   "chains": 2,
+   "loops": 0,
+   "ff_ramps": 1,
+   "xy": [
+    -111.93318,
+    33.38558
+   ],
+   "total_ramp_miles": 1.13
+  },
+  {
+   "token": "PARTIAL_G3",
+   "gores": 3,
+   "chains": 3,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.8984,
+    33.43573
+   ],
+   "total_ramp_miles": 1.95
+  },
+  {
+   "token": "PARTIAL_G3",
+   "gores": 3,
+   "chains": 3,
+   "loops": 0,
+   "ff_ramps": 1,
+   "xy": [
+    -111.89802,
+    33.38583
+   ],
+   "total_ramp_miles": 1.8
+  },
+  {
+   "token": "PARTIAL_G2",
+   "gores": 2,
+   "chains": 2,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.89424,
+    33.30191
+   ],
+   "total_ramp_miles": 0.97
+  },
+  {
+   "token": "PARTIAL_G2",
+   "gores": 2,
+   "chains": 2,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.97801,
+    33.42714
+   ],
+   "total_ramp_miles": 0.58
+  },
+  {
+   "token": "PARTIAL_G2",
+   "gores": 2,
+   "chains": 21,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.98192,
+    33.44814
+   ],
+   "total_ramp_miles": 1.63
+  },
+  {
+   "token": "PARTIAL_G2",
+   "gores": 2,
+   "chains": 2,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.93344,
+    33.43532
+   ],
+   "total_ramp_miles": 0.76
+  },
+  {
+   "token": "PARTIAL_G2",
+   "gores": 2,
+   "chains": 2,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.89116,
+    33.42581
+   ],
+   "total_ramp_miles": 0.46
+  },
+  {
+   "token": "PARTIAL_G2",
+   "gores": 2,
+   "chains": 8,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.89105,
+    33.43467
+   ],
+   "total_ramp_miles": 4.8
+  },
+  {
+   "token": "PARTIAL_G2",
+   "gores": 2,
+   "chains": 2,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.8805,
+    33.43492
+   ],
+   "total_ramp_miles": 0.62
+  },
+  {
+   "token": "SLIP_RAMP",
+   "gores": 1,
+   "chains": 1,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.88985,
+    33.45688
+   ],
+   "total_ramp_miles": 0.39
+  },
+  {
+   "token": "SLIP_RAMP",
+   "gores": 1,
+   "chains": 1,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.89246,
+    33.38037
+   ],
+   "total_ramp_miles": 0.17
+  },
+  {
+   "token": "SLIP_RAMP",
+   "gores": 0,
+   "chains": 1,
+   "loops": 0,
+   "ff_ramps": 0,
+   "xy": [
+    -111.9832,
+    33.4574
+   ],
+   "total_ramp_miles": 0.82
+  }
+ ],
+ "junction_tokens": [
+  {
+   "token": "MERGE",
+   "node": "55",
+   "xy": [
+    -111.972464,
+    33.2958815
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "22510",
+   "xy": [
+    -111.891023,
+    33.424928
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "24521",
+   "xy": [
+    -111.8989901,
+    33.385846
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "10901",
+   "xy": [
+    -111.8937892,
+    33.3698643
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "24768",
+   "xy": [
+    -111.9019512,
+    33.3855783
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "24502",
+   "xy": [
+    -111.8924599,
+    33.3803658
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "1337",
+   "xy": [
+    -111.9711154,
+    33.3546267
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11590",
+   "xy": [
+    -111.9788949,
+    33.4369509
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "11642",
+   "xy": [
+    -111.9738299,
+    33.4371135
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "1335",
+   "xy": [
+    -111.9678078,
+    33.3734837
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "13371",
+   "xy": [
+    -111.9501241,
+    33.3856756
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "10566",
+   "xy": [
+    -111.8942923,
+    33.3552521
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "11608",
+   "xy": [
+    -111.9832139,
+    33.4364925
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "22754",
+   "xy": [
+    -111.8984568,
+    33.4356374
+   ],
+   "ramp_in": 0,
+   "ramp_out": 2
+  },
+  {
+   "token": "MERGE",
+   "node": "23105",
+   "xy": [
+    -111.8907115,
+    33.4444606
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "11214",
+   "xy": [
+    -111.9780915,
+    33.4138407
+   ],
+   "ramp_in": 2,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "16500",
+   "xy": [
+    -111.9152171,
+    33.3857964
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "4075",
+   "xy": [
+    -111.9723774,
+    33.3444649
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "10581",
+   "xy": [
+    -111.8945641,
+    33.3554939
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11607",
+   "xy": [
+    -111.9800289,
+    33.4409545
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "10008",
+   "xy": [
+    -111.8930125,
+    33.3289678
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "15774",
+   "xy": [
+    -111.9326683,
+    33.3857123
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "14960",
+   "xy": [
+    -111.9527655,
+    33.3856931
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "10009",
+   "xy": [
+    -111.8932593,
+    33.3289655
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "14637",
+   "xy": [
+    -111.9681498,
+    33.3762119
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11261",
+   "xy": [
+    -111.9781861,
+    33.4215569
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "10867",
+   "xy": [
+    -111.89348,
+    33.3698826
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11648",
+   "xy": [
+    -111.9717703,
+    33.437361
+   ],
+   "ramp_in": 0,
+   "ramp_out": 2
+  },
+  {
+   "token": "MERGE",
+   "node": "13856",
+   "xy": [
+    -111.9819475,
+    33.4111272
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "10310",
+   "xy": [
+    -111.8932413,
+    33.3430014
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11660",
+   "xy": [
+    -111.959806,
+    33.4376385
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "10636",
+   "xy": [
+    -111.894209,
+    33.3574079
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "13554",
+   "xy": [
+    -111.9613752,
+    33.3872759
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "24518",
+   "xy": [
+    -111.89027,
+    33.3856347
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "13853",
+   "xy": [
+    -111.9784362,
+    33.4093378
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "20468",
+   "xy": [
+    -111.9343622,
+    33.4350119
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "13879",
+   "xy": [
+    -111.9840523,
+    33.4108145
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "14894",
+   "xy": [
+    -111.9581954,
+    33.3867543
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "22740",
+   "xy": [
+    -111.891169,
+    33.4349055
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "14843",
+   "xy": [
+    -111.9621682,
+    33.3877843
+   ],
+   "ramp_in": 0,
+   "ramp_out": 2
+  },
+  {
+   "token": "MERGE",
+   "node": "6936",
+   "xy": [
+    -111.9720507,
+    33.3106106
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "1334",
+   "xy": [
+    -111.9708235,
+    33.3545873
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "13517",
+   "xy": [
+    -111.9677678,
+    33.3961556
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "23095",
+   "xy": [
+    -111.8898482,
+    33.4568805
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "9420",
+   "xy": [
+    -111.8942216,
+    33.3141505
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "21254",
+   "xy": [
+    -111.9170208,
+    33.4359126
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "22516",
+   "xy": [
+    -111.8912967,
+    33.4266958
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "6972",
+   "xy": [
+    -111.9723647,
+    33.3074519
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "22714",
+   "xy": [
+    -111.890829,
+    33.4343926
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11719",
+   "xy": [
+    -111.9687704,
+    33.4451216
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11206",
+   "xy": [
+    -111.9784953,
+    33.4138792
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "13692",
+   "xy": [
+    -111.9693181,
+    33.3920772
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "23104",
+   "xy": [
+    -111.8910538,
+    33.4432204
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "24437",
+   "xy": [
+    -111.8913281,
+    33.3846107
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "9268",
+   "xy": [
+    -111.8945094,
+    33.3121271
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "9419",
+   "xy": [
+    -111.8944882,
+    33.314286
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "66",
+   "xy": [
+    -111.972046,
+    33.304357
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "11255",
+   "xy": [
+    -111.9784652,
+    33.4191768
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "20534",
+   "xy": [
+    -111.9196264,
+    33.4362077
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11435",
+   "xy": [
+    -111.9782739,
+    33.4329419
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "16628",
+   "xy": [
+    -111.910471,
+    33.3855719
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "23082",
+   "xy": [
+    -111.8906908,
+    33.4462168
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "4389",
+   "xy": [
+    -111.9723813,
+    33.3397549
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "11664",
+   "xy": [
+    -111.968363,
+    33.4418246
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "21255",
+   "xy": [
+    -111.9147835,
+    33.4361745
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "24505",
+   "xy": [
+    -111.8928901,
+    33.3799735
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "11422",
+   "xy": [
+    -111.9779053,
+    33.4272037
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "24311",
+   "xy": [
+    -111.890968,
+    33.3991261
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "784",
+   "xy": [
+    -111.8941115,
+    33.3017302
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "9502",
+   "xy": [
+    -111.8936435,
+    33.3257672
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "7305",
+   "xy": [
+    -111.9724127,
+    33.3138376
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "13376",
+   "xy": [
+    -111.9672803,
+    33.3974838
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "4058",
+   "xy": [
+    -111.9721013,
+    33.3429747
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "16490",
+   "xy": [
+    -111.9186399,
+    33.3855081
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "22431",
+   "xy": [
+    -111.8915452,
+    33.4142477
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "15609",
+   "xy": [
+    -111.9336895,
+    33.3854485
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11654",
+   "xy": [
+    -111.9671411,
+    33.4397815
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "7306",
+   "xy": [
+    -111.9720741,
+    33.3138372
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "13720",
+   "xy": [
+    -111.9696916,
+    33.4062378
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11452",
+   "xy": [
+    -111.981826,
+    33.4482138
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "11208",
+   "xy": [
+    -111.9784773,
+    33.410114
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "20508",
+   "xy": [
+    -111.9209308,
+    33.4359384
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "23143",
+   "xy": [
+    -111.8813507,
+    33.434576
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "10198",
+   "xy": [
+    -111.8931767,
+    33.3411493
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "4388",
+   "xy": [
+    -111.9721059,
+    33.3404847
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "20215",
+   "xy": [
+    -111.9431858,
+    33.4355463
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "23081",
+   "xy": [
+    -111.8910167,
+    33.446319
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "14829",
+   "xy": [
+    -111.9683823,
+    33.387612
+   ],
+   "ramp_in": 0,
+   "ramp_out": 2
+  },
+  {
+   "token": "MERGE",
+   "node": "14903",
+   "xy": [
+    -111.9583104,
+    33.3864684
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "16604",
+   "xy": [
+    -111.9069667,
+    33.3858549
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "785",
+   "xy": [
+    -111.8943766,
+    33.3020914
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11447",
+   "xy": [
+    -111.98029,
+    33.4426162
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "11666",
+   "xy": [
+    -111.969098,
+    33.4454536
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "6973",
+   "xy": [
+    -111.9720561,
+    33.3076068
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "15610",
+   "xy": [
+    -111.933892,
+    33.3857087
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "11455",
+   "xy": [
+    -111.9805188,
+    33.44274
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "23057",
+   "xy": [
+    -111.8982934,
+    33.4359041
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "10637",
+   "xy": [
+    -111.8945171,
+    33.3575819
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "24308",
+   "xy": [
+    -111.891325,
+    33.394813
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "14638",
+   "xy": [
+    -111.9677991,
+    33.3759744
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "15773",
+   "xy": [
+    -111.9324754,
+    33.3854492
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11643",
+   "xy": [
+    -111.9707874,
+    33.4379417
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "10319",
+   "xy": [
+    -111.89358,
+    33.3432013
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "24469",
+   "xy": [
+    -111.8844081,
+    33.3858908
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "11430",
+   "xy": [
+    -111.9783797,
+    33.431984
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "13582",
+   "xy": [
+    -111.967383,
+    33.3931667
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "23093",
+   "xy": [
+    -111.8894678,
+    33.4571921
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "14679",
+   "xy": [
+    -111.9679642,
+    33.3848183
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "11316",
+   "xy": [
+    -111.9785607,
+    33.4208538
+   ],
+   "ramp_in": 2,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11264",
+   "xy": [
+    -111.9783628,
+    33.4145266
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "6428",
+   "xy": [
+    -111.9723567,
+    33.326607
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "11652",
+   "xy": [
+    -111.96598,
+    33.4396174
+   ],
+   "ramp_in": 2,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "9503",
+   "xy": [
+    -111.8933086,
+    33.3262163
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "56",
+   "xy": [
+    -111.972334,
+    33.3045561
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "25149",
+   "xy": [
+    -111.8934053,
+    33.3713538
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "22429",
+   "xy": [
+    -111.8911171,
+    33.4172539
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11250",
+   "xy": [
+    -111.9778487,
+    33.417917
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "24307",
+   "xy": [
+    -111.8912955,
+    33.3990156
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "24472",
+   "xy": [
+    -111.8907039,
+    33.3858465
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "11254",
+   "xy": [
+    -111.9780737,
+    33.4201829
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "25616",
+   "xy": [
+    -111.8803283,
+    33.3856431
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "13579",
+   "xy": [
+    -111.9678428,
+    33.3922814
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "13721",
+   "xy": [
+    -111.9689053,
+    33.4057617
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "20203",
+   "xy": [
+    -111.942658,
+    33.4357953
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11610",
+   "xy": [
+    -111.9835051,
+    33.4371585
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "14684",
+   "xy": [
+    -111.9676438,
+    33.3849569
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "25151",
+   "xy": [
+    -111.8936528,
+    33.3726188
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "23147",
+   "xy": [
+    -111.8796563,
+    33.4352675
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "24390",
+   "xy": [
+    -111.8909871,
+    33.3870935
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "11210",
+   "xy": [
+    -111.9779265,
+    33.4158455
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "6463",
+   "xy": [
+    -111.9720876,
+    33.3245642
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "15450",
+   "xy": [
+    -111.9442985,
+    33.3856779
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "11591",
+   "xy": [
+    -111.9790845,
+    33.4366266
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "15451",
+   "xy": [
+    -111.9453019,
+    33.3854201
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "16501",
+   "xy": [
+    -111.9186492,
+    33.3858203
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "13576",
+   "xy": [
+    -111.9694217,
+    33.3903066
+   ],
+   "ramp_in": 2,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "22428",
+   "xy": [
+    -111.8911987,
+    33.4137733
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "1336",
+   "xy": [
+    -111.9681569,
+    33.3730062
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11260",
+   "xy": [
+    -111.9776611,
+    33.420869
+   ],
+   "ramp_in": 0,
+   "ramp_out": 2
+  },
+  {
+   "token": "MERGE",
+   "node": "6505",
+   "xy": [
+    -111.9723758,
+    33.3289499
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "11423",
+   "xy": [
+    -111.9781122,
+    33.4270813
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "59",
+   "xy": [
+    -111.9718889,
+    33.2955632
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "11650",
+   "xy": [
+    -111.9603117,
+    33.4374601
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "24310",
+   "xy": [
+    -111.8910108,
+    33.395669
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "16491",
+   "xy": [
+    -111.9163787,
+    33.3855287
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "DIVERGE",
+   "node": "10197",
+   "xy": [
+    -111.893464,
+    33.3411913
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "11456",
+   "xy": [
+    -111.9825725,
+    33.4502843
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "22430",
+   "xy": [
+    -111.8914903,
+    33.4165545
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "24517",
+   "xy": [
+    -111.8975742,
+    33.3856102
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "20465",
+   "xy": [
+    -111.9325158,
+    33.4356206
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "MERGE",
+   "node": "12062",
+   "xy": [
+    -111.950993,
+    33.4360399
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "13516",
+   "xy": [
+    -111.967676,
+    33.3979911
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "14959",
+   "xy": [
+    -111.955124,
+    33.3855488
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "6937",
+   "xy": [
+    -111.9724088,
+    33.3106505
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "9267",
+   "xy": [
+    -111.8942024,
+    33.3114849
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "23567",
+   "xy": [
+    -111.8909793,
+    33.4005119
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "13687",
+   "xy": [
+    -111.9705716,
+    33.4066195
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  },
+  {
+   "token": "DIVERGE",
+   "node": "6500",
+   "xy": [
+    -111.9720713,
+    33.3289718
+   ],
+   "ramp_in": 0,
+   "ramp_out": 1
+  },
+  {
+   "token": "MERGE",
+   "node": "23559",
+   "xy": [
+    -111.891288,
+    33.4005301
+   ],
+   "ramp_in": 1,
+   "ramp_out": 0
+  }
+ ],
+ "ramp_tokens": [
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.886,
+   "turn_deg": -68.6,
+   "mid_xy": [
+    -111.9721918,
+    33.298281
+   ],
+   "anchor_xy": [
+    -111.9721918,
+    33.298281
+   ],
+   "start": "43",
+   "end": "46"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.304,
+   "turn_deg": -5.6,
+   "mid_xy": [
+    -111.9718066,
+    33.3049567
+   ],
+   "anchor_xy": [
+    -111.9720561,
+    33.3076068
+   ],
+   "start": "46",
+   "end": "6973"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.565,
+   "turn_deg": 43.5,
+   "mid_xy": [
+    -111.9736805,
+    33.2989803
+   ],
+   "anchor_xy": [
+    -111.9736805,
+    33.2989803
+   ],
+   "start": "47",
+   "end": "50"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.876,
+   "turn_deg": -87.1,
+   "mid_xy": [
+    -111.9711982,
+    33.2972553
+   ],
+   "anchor_xy": [
+    -111.9711982,
+    33.2972553
+   ],
+   "start": "47",
+   "end": "69"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.651,
+   "turn_deg": -8.9,
+   "mid_xy": [
+    -111.9733313,
+    33.3008134
+   ],
+   "anchor_xy": [
+    -111.972464,
+    33.2958815
+   ],
+   "start": "51",
+   "end": "55"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 1.022,
+   "turn_deg": -68.2,
+   "mid_xy": [
+    -111.971295,
+    33.297731
+   ],
+   "anchor_xy": [
+    -111.972334,
+    33.3045561
+   ],
+   "start": "56",
+   "end": "89"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 1.047,
+   "turn_deg": -23.2,
+   "mid_xy": [
+    -111.9713014,
+    33.3032167
+   ],
+   "anchor_xy": [
+    -111.9718889,
+    33.2955632
+   ],
+   "start": "59",
+   "end": "6936"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.55,
+   "turn_deg": 56.6,
+   "mid_xy": [
+    -111.97084856588084,
+    33.29918629882127
+   ],
+   "anchor_xy": [
+    -111.97084856588084,
+    33.29918629882127
+   ],
+   "start": "70",
+   "end": "46"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.889,
+   "turn_deg": 85.1,
+   "mid_xy": [
+    -111.971502,
+    33.2980948
+   ],
+   "anchor_xy": [
+    -111.972046,
+    33.304357
+   ],
+   "start": "83",
+   "end": "66"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.473,
+   "turn_deg": 15.5,
+   "mid_xy": [
+    -111.8937878,
+    33.2973905
+   ],
+   "anchor_xy": [
+    -111.8941115,
+    33.3017302
+   ],
+   "start": "783",
+   "end": "784"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.502,
+   "turn_deg": -32.8,
+   "mid_xy": [
+    -111.894831,
+    33.2967425
+   ],
+   "anchor_xy": [
+    -111.8943766,
+    33.3020914
+   ],
+   "start": "785",
+   "end": "786"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.605,
+   "turn_deg": -18.2,
+   "mid_xy": [
+    -111.967355,
+    33.3781389
+   ],
+   "anchor_xy": [
+    -111.9678078,
+    33.3734837
+   ],
+   "start": "1335",
+   "end": "14669"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.715,
+   "turn_deg": -27.1,
+   "mid_xy": [
+    -111.97280499686552,
+    33.348851261641194
+   ],
+   "anchor_xy": [
+    -111.9711154,
+    33.3546267
+   ],
+   "start": "1337",
+   "end": "4075"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.374,
+   "turn_deg": 14.8,
+   "mid_xy": [
+    -111.9712275,
+    33.3512342
+   ],
+   "anchor_xy": [
+    -111.9708235,
+    33.3545873
+   ],
+   "start": "4032",
+   "end": "1334"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.421,
+   "turn_deg": -10.7,
+   "mid_xy": [
+    -111.9717157,
+    33.3466911
+   ],
+   "anchor_xy": [
+    -111.9721013,
+    33.3429747
+   ],
+   "start": "4058",
+   "end": "4046"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.749,
+   "turn_deg": -29.6,
+   "mid_xy": [
+    -111.972945,
+    33.3342851
+   ],
+   "anchor_xy": [
+    -111.9723813,
+    33.3397549
+   ],
+   "start": "4389",
+   "end": "6505"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.896,
+   "turn_deg": -23.0,
+   "mid_xy": [
+    -111.97352098071735,
+    33.32010204285501
+   ],
+   "anchor_xy": [
+    -111.9723567,
+    33.326607
+   ],
+   "start": "6428",
+   "end": "7305"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.319,
+   "turn_deg": 1.4,
+   "mid_xy": [
+    -111.9718835,
+    33.3219789
+   ],
+   "anchor_xy": [
+    -111.9720876,
+    33.3245642
+   ],
+   "start": "6461",
+   "end": "6463"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.798,
+   "turn_deg": -16.0,
+   "mid_xy": [
+    -111.971469,
+    33.3344345
+   ],
+   "anchor_xy": [
+    -111.9720713,
+    33.3289718
+   ],
+   "start": "6500",
+   "end": "4388"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.376,
+   "turn_deg": -16.6,
+   "mid_xy": [
+    -111.9729418,
+    33.3062008
+   ],
+   "anchor_xy": [
+    -111.9724088,
+    33.3106505
+   ],
+   "start": "6937",
+   "end": "51"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.292,
+   "turn_deg": -17.3,
+   "mid_xy": [
+    -111.9727451,
+    33.3038903
+   ],
+   "anchor_xy": [
+    -111.9723647,
+    33.3074519
+   ],
+   "start": "6972",
+   "end": "47"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.428,
+   "turn_deg": -10.2,
+   "mid_xy": [
+    -111.9715641,
+    33.3185631
+   ],
+   "anchor_xy": [
+    -111.9720741,
+    33.3138372
+   ],
+   "start": "7306",
+   "end": "6461"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.353,
+   "turn_deg": -18.8,
+   "mid_xy": [
+    -111.8947722,
+    33.3097241
+   ],
+   "anchor_xy": [
+    -111.8945094,
+    33.3121271
+   ],
+   "start": "9268",
+   "end": "9272"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.319,
+   "turn_deg": -1.9,
+   "mid_xy": [
+    -111.8939661,
+    33.3097461
+   ],
+   "anchor_xy": [
+    -111.8942024,
+    33.3114849
+   ],
+   "start": "9275",
+   "end": "9267"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.348,
+   "turn_deg": 10.2,
+   "mid_xy": [
+    -111.8939586,
+    33.3168284
+   ],
+   "anchor_xy": [
+    -111.8942216,
+    33.3141505
+   ],
+   "start": "9420",
+   "end": "9427"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.347,
+   "turn_deg": -7.6,
+   "mid_xy": [
+    -111.8948458,
+    33.3172457
+   ],
+   "anchor_xy": [
+    -111.8944882,
+    33.314286
+   ],
+   "start": "9428",
+   "end": "9419"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.302,
+   "turn_deg": -16.2,
+   "mid_xy": [
+    -111.8940501,
+    33.3242778
+   ],
+   "anchor_xy": [
+    -111.8936435,
+    33.3257672
+   ],
+   "start": "9502",
+   "end": "9494"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.363,
+   "turn_deg": 1.7,
+   "mid_xy": [
+    -111.893394,
+    33.3240671
+   ],
+   "anchor_xy": [
+    -111.8933086,
+    33.3262163
+   ],
+   "start": "9505",
+   "end": "9503"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.334,
+   "turn_deg": -4.5,
+   "mid_xy": [
+    -111.8926006,
+    33.3315882
+   ],
+   "anchor_xy": [
+    -111.8930125,
+    33.3289678
+   ],
+   "start": "10008",
+   "end": "10054"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.324,
+   "turn_deg": 2.1,
+   "mid_xy": [
+    -111.893348,
+    33.3309694
+   ],
+   "anchor_xy": [
+    -111.8932593,
+    33.3289655
+   ],
+   "start": "10055",
+   "end": "10009"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.38,
+   "turn_deg": -5.2,
+   "mid_xy": [
+    -111.892829,
+    33.3388059
+   ],
+   "anchor_xy": [
+    -111.8931767,
+    33.3411493
+   ],
+   "start": "10196",
+   "end": "10198"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.352,
+   "turn_deg": 4.2,
+   "mid_xy": [
+    -111.8934612,
+    33.337506
+   ],
+   "anchor_xy": [
+    -111.893464,
+    33.3411913
+   ],
+   "start": "10197",
+   "end": "10190"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.365,
+   "turn_deg": -10.8,
+   "mid_xy": [
+    -111.8938497,
+    33.3447222
+   ],
+   "anchor_xy": [
+    -111.89358,
+    33.3432013
+   ],
+   "start": "10294",
+   "end": "10319"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.375,
+   "turn_deg": -8.0,
+   "mid_xy": [
+    -111.8932168,
+    33.345359
+   ],
+   "anchor_xy": [
+    -111.8932413,
+    33.3430014
+   ],
+   "start": "10310",
+   "end": "10311"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.353,
+   "turn_deg": 8.0,
+   "mid_xy": [
+    -111.8937802,
+    33.3524064
+   ],
+   "anchor_xy": [
+    -111.8942923,
+    33.3552521
+   ],
+   "start": "10574",
+   "end": "10566"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.343,
+   "turn_deg": 3.0,
+   "mid_xy": [
+    -111.8946089,
+    33.3528759
+   ],
+   "anchor_xy": [
+    -111.8945641,
+    33.3554939
+   ],
+   "start": "10581",
+   "end": "10622"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.352,
+   "turn_deg": -1.5,
+   "mid_xy": [
+    -111.8937991,
+    33.3599769
+   ],
+   "anchor_xy": [
+    -111.894209,
+    33.3574079
+   ],
+   "start": "10636",
+   "end": "10815"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.315,
+   "turn_deg": 11.8,
+   "mid_xy": [
+    -111.8945058,
+    33.3598604
+   ],
+   "anchor_xy": [
+    -111.8945171,
+    33.3575819
+   ],
+   "start": "10825",
+   "end": "10637"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.31,
+   "turn_deg": -0.7,
+   "mid_xy": [
+    -111.8941061,
+    33.367847
+   ],
+   "anchor_xy": [
+    -111.8937892,
+    33.3698643
+   ],
+   "start": "10901",
+   "end": "10911"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.301,
+   "turn_deg": 2.7,
+   "mid_xy": [
+    -111.8934229,
+    33.368173
+   ],
+   "anchor_xy": [
+    -111.89348,
+    33.3698826
+   ],
+   "start": "10924",
+   "end": "10867"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.287,
+   "turn_deg": 79.9,
+   "mid_xy": [
+    -111.9793102,
+    33.4117723
+   ],
+   "anchor_xy": [
+    -111.9784953,
+    33.4138792
+   ],
+   "start": "11206",
+   "end": "11207"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.373,
+   "turn_deg": 1.5,
+   "mid_xy": [
+    -111.9845903670465,
+    33.41136309971738
+   ],
+   "anchor_xy": [
+    -111.9845903670465,
+    33.41136309971738
+   ],
+   "start": "11207",
+   "end": "14000"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.228,
+   "turn_deg": 56.4,
+   "mid_xy": [
+    -111.97766636847473,
+    33.41268771669852
+   ],
+   "anchor_xy": [
+    -111.9780915,
+    33.4138407
+   ],
+   "start": "11211",
+   "end": "11214"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.008,
+   "turn_deg": -14.9,
+   "mid_xy": [
+    -111.9759056,
+    33.4113557
+   ],
+   "anchor_xy": [
+    -111.9759056,
+    33.4113557
+   ],
+   "start": "11211",
+   "end": "11223"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.342,
+   "turn_deg": 41.3,
+   "mid_xy": [
+    -111.9776404,
+    33.4136158
+   ],
+   "anchor_xy": [
+    -111.9779265,
+    33.4158455
+   ],
+   "start": "11223",
+   "end": "11210"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.133,
+   "turn_deg": 2.8,
+   "mid_xy": [
+    -111.9769647,
+    33.411443
+   ],
+   "anchor_xy": [
+    -111.9769647,
+    33.411443
+   ],
+   "start": "11223",
+   "end": "13846"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.158,
+   "turn_deg": -6.6,
+   "mid_xy": [
+    -111.9779678,
+    33.4193883
+   ],
+   "anchor_xy": [
+    -111.9778487,
+    33.417917
+   ],
+   "start": "11250",
+   "end": "11254"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.074,
+   "turn_deg": -56.0,
+   "mid_xy": [
+    -111.9779236,
+    33.4216943
+   ],
+   "anchor_xy": [
+    -111.9776611,
+    33.420869
+   ],
+   "start": "11260",
+   "end": "11311"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.068,
+   "turn_deg": 40.3,
+   "mid_xy": [
+    -111.9775847,
+    33.4217042
+   ],
+   "anchor_xy": [
+    -111.9776611,
+    33.420869
+   ],
+   "start": "11260",
+   "end": "11306"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.165,
+   "turn_deg": 4.9,
+   "mid_xy": [
+    -111.9783506,
+    33.4199519
+   ],
+   "anchor_xy": [
+    -111.9781861,
+    33.4215569
+   ],
+   "start": "11261",
+   "end": "11255"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.807,
+   "turn_deg": -13.7,
+   "mid_xy": [
+    -111.9758767,
+    33.4103596
+   ],
+   "anchor_xy": [
+    -111.9783628,
+    33.4145266
+   ],
+   "start": "11264",
+   "end": "13720"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.099,
+   "turn_deg": 73.3,
+   "mid_xy": [
+    -111.9774715,
+    33.4220583
+   ],
+   "anchor_xy": [
+    -111.9774715,
+    33.4220583
+   ],
+   "start": "11304",
+   "end": "11428"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.078,
+   "turn_deg": -53.5,
+   "mid_xy": [
+    -111.9776995,
+    33.4223786
+   ],
+   "anchor_xy": [
+    -111.9776995,
+    33.4223786
+   ],
+   "start": "11308",
+   "end": "11428"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.076,
+   "turn_deg": -55.4,
+   "mid_xy": [
+    -111.978425,
+    33.4215547
+   ],
+   "anchor_xy": [
+    -111.9785607,
+    33.4208538
+   ],
+   "start": "11311",
+   "end": "11316"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.075,
+   "turn_deg": 53.1,
+   "mid_xy": [
+    -111.978686,
+    33.4216802
+   ],
+   "anchor_xy": [
+    -111.9785607,
+    33.4208538
+   ],
+   "start": "11318",
+   "end": "11316"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.069,
+   "turn_deg": 34.3,
+   "mid_xy": [
+    -111.9786419,
+    33.4220684
+   ],
+   "anchor_xy": [
+    -111.9786419,
+    33.4220684
+   ],
+   "start": "11404",
+   "end": "11320"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.073,
+   "turn_deg": -59.6,
+   "mid_xy": [
+    -111.9783537,
+    33.4221704
+   ],
+   "anchor_xy": [
+    -111.9783537,
+    33.4221704
+   ],
+   "start": "11404",
+   "end": "11308"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.288,
+   "turn_deg": -1.2,
+   "mid_xy": [
+    -111.9783804,
+    33.4241052
+   ],
+   "anchor_xy": [
+    -111.9781122,
+    33.4270813
+   ],
+   "start": "11423",
+   "end": "11404"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.292,
+   "turn_deg": -0.1,
+   "mid_xy": [
+    -111.9778401,
+    33.4253103
+   ],
+   "anchor_xy": [
+    -111.9779053,
+    33.4272037
+   ],
+   "start": "11428",
+   "end": "11422"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.459,
+   "turn_deg": 73.6,
+   "mid_xy": [
+    -111.9778457,
+    33.4358108
+   ],
+   "anchor_xy": [
+    -111.9782739,
+    33.4329419
+   ],
+   "start": "11435",
+   "end": "11642"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.291,
+   "turn_deg": -78.7,
+   "mid_xy": [
+    -111.9825196,
+    33.436366
+   ],
+   "anchor_xy": [
+    -111.9825196,
+    33.436366
+   ],
+   "start": "11439",
+   "end": "11616"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.289,
+   "turn_deg": -2.2,
+   "mid_xy": [
+    -111.9806635,
+    33.4448124
+   ],
+   "anchor_xy": [
+    -111.98029,
+    33.4426162
+   ],
+   "start": "11447",
+   "end": "11449"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.06,
+   "turn_deg": 57.8,
+   "mid_xy": [
+    -111.9809222,
+    33.4474236
+   ],
+   "anchor_xy": [
+    -111.9809222,
+    33.4474236
+   ],
+   "start": "11449",
+   "end": "11461"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.085,
+   "turn_deg": -41.2,
+   "mid_xy": [
+    -111.9811949,
+    33.4472616
+   ],
+   "anchor_xy": [
+    -111.9811949,
+    33.4472616
+   ],
+   "start": "11449",
+   "end": "11471"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.183,
+   "turn_deg": 9.3,
+   "mid_xy": [
+    -111.9819909,
+    33.4495221
+   ],
+   "anchor_xy": [
+    -111.981826,
+    33.4482138
+   ],
+   "start": "11452",
+   "end": "11516"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.306,
+   "turn_deg": 2.1,
+   "mid_xy": [
+    -111.98099257334195,
+    33.44408352180057
+   ],
+   "anchor_xy": [
+    -111.9805188,
+    33.44274
+   ],
+   "start": "11453",
+   "end": "11455"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.057,
+   "turn_deg": 43.5,
+   "mid_xy": [
+    -111.9811805220445,
+    33.44796304471287
+   ],
+   "anchor_xy": [
+    -111.9811805220445,
+    33.44796304471287
+   ],
+   "start": "11463",
+   "end": "11466"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.023,
+   "turn_deg": 1.4,
+   "mid_xy": [
+    -111.98164071812367,
+    33.44777727003094
+   ],
+   "anchor_xy": [
+    -111.98164071812367,
+    33.44777727003094
+   ],
+   "start": "11464",
+   "end": "11472"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.172,
+   "turn_deg": 12.2,
+   "mid_xy": [
+    -111.9818094,
+    33.4496316
+   ],
+   "anchor_xy": [
+    -111.9818094,
+    33.4496316
+   ],
+   "start": "11466",
+   "end": "11516"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.041,
+   "turn_deg": -54.7,
+   "mid_xy": [
+    -111.9814268,
+    33.4481129
+   ],
+   "anchor_xy": [
+    -111.9814268,
+    33.4481129
+   ],
+   "start": "11467",
+   "end": "11466"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.012,
+   "turn_deg": -13.1,
+   "mid_xy": [
+    -111.9817617,
+    33.4478337
+   ],
+   "anchor_xy": [
+    -111.9817617,
+    33.4478337
+   ],
+   "start": "11469",
+   "end": "11467"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.007,
+   "turn_deg": 0.1,
+   "mid_xy": [
+    -111.98175990482801,
+    33.44779260300649
+   ],
+   "anchor_xy": [
+    -111.98175990482801,
+    33.44779260300649
+   ],
+   "start": "11469",
+   "end": "11472"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.008,
+   "turn_deg": 0.0,
+   "mid_xy": [
+    -111.98185209948005,
+    33.44776109968106
+   ],
+   "anchor_xy": [
+    -111.98185209948005,
+    33.44776109968106
+   ],
+   "start": "11471",
+   "end": "11475"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.07,
+   "turn_deg": -88.7,
+   "mid_xy": [
+    -111.9822486,
+    33.4474204
+   ],
+   "anchor_xy": [
+    -111.9822486,
+    33.4474204
+   ],
+   "start": "11471",
+   "end": "11453"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.006,
+   "turn_deg": 0.1,
+   "mid_xy": [
+    -111.98174650554003,
+    33.44774769821387
+   ],
+   "anchor_xy": [
+    -111.98174650554003,
+    33.44774769821387
+   ],
+   "start": "11472",
+   "end": "11471"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.019,
+   "turn_deg": -3.9,
+   "mid_xy": [
+    -111.98165323242497,
+    33.44773497670563
+   ],
+   "anchor_xy": [
+    -111.98165323242497,
+    33.44773497670563
+   ],
+   "start": "11472",
+   "end": "11462"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.006,
+   "turn_deg": 0.1,
+   "mid_xy": [
+    -111.98187959742404,
+    33.44780790056349
+   ],
+   "anchor_xy": [
+    -111.98187959742404,
+    33.44780790056349
+   ],
+   "start": "11475",
+   "end": "11469"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.028,
+   "turn_deg": -7.6,
+   "mid_xy": [
+    -111.9821405,
+    33.4479078
+   ],
+   "anchor_xy": [
+    -111.9821405,
+    33.4479078
+   ],
+   "start": "11475",
+   "end": "11486"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.02,
+   "turn_deg": -4.1,
+   "mid_xy": [
+    -111.98200527086583,
+    33.44778034085899
+   ],
+   "anchor_xy": [
+    -111.98200527086583,
+    33.44778034085899
+   ],
+   "start": "11484",
+   "end": "11475"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.104,
+   "turn_deg": 51.2,
+   "mid_xy": [
+    -111.98273909410017,
+    33.44771574315844
+   ],
+   "anchor_xy": [
+    -111.98273909410017,
+    33.44771574315844
+   ],
+   "start": "11489",
+   "end": "11453"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.048,
+   "turn_deg": 55.1,
+   "mid_xy": [
+    -111.9826184,
+    33.4481601
+   ],
+   "anchor_xy": [
+    -111.9826184,
+    33.4481601
+   ],
+   "start": "11492",
+   "end": "11488"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.064,
+   "turn_deg": -33.6,
+   "mid_xy": [
+    -111.9823663,
+    33.4482298
+   ],
+   "anchor_xy": [
+    -111.9823663,
+    33.4482298
+   ],
+   "start": "11492",
+   "end": "11468"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.255,
+   "turn_deg": -5.5,
+   "mid_xy": [
+    -111.9827475,
+    33.4508808
+   ],
+   "anchor_xy": [
+    -111.9825725,
+    33.4502843
+   ],
+   "start": "11494",
+   "end": "11456"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.366,
+   "turn_deg": -11.2,
+   "mid_xy": [
+    -111.9830219,
+    33.4504072
+   ],
+   "anchor_xy": [
+    -111.9830219,
+    33.4504072
+   ],
+   "start": "11494",
+   "end": "11492"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.817,
+   "turn_deg": -87.9,
+   "mid_xy": [
+    -111.9831979,
+    33.4574048
+   ],
+   "anchor_xy": [
+    -111.9831979,
+    33.4574048
+   ],
+   "start": "11516",
+   "end": "25679"
+  },
+  {
+   "token": "RAMP_LOOP",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.628,
+   "turn_deg": 259.7,
+   "mid_xy": [
+    -111.9764867,
+    33.4394082
+   ],
+   "anchor_xy": [
+    -111.9788949,
+    33.4369509
+   ],
+   "start": "11590",
+   "end": "11591"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.448,
+   "turn_deg": 70.6,
+   "mid_xy": [
+    -111.9797954,
+    33.4377116
+   ],
+   "anchor_xy": [
+    -111.9800289,
+    33.4409545
+   ],
+   "start": "11607",
+   "end": "11608"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.42,
+   "turn_deg": 48.0,
+   "mid_xy": [
+    -111.9807514,
+    33.4361187
+   ],
+   "anchor_xy": [
+    -111.9835051,
+    33.4371585
+   ],
+   "start": "11610",
+   "end": "11614"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.122,
+   "turn_deg": 0.2,
+   "mid_xy": [
+    -111.9785187,
+    33.4328483
+   ],
+   "anchor_xy": [
+    -111.9783797,
+    33.431984
+   ],
+   "start": "11614",
+   "end": "11430"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.778,
+   "turn_deg": -78.3,
+   "mid_xy": [
+    -111.9777418,
+    33.4383316
+   ],
+   "anchor_xy": [
+    -111.9707874,
+    33.4379417
+   ],
+   "start": "11643",
+   "end": "11614"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.67,
+   "turn_deg": 19.0,
+   "mid_xy": [
+    -111.9639422,
+    33.4380559
+   ],
+   "anchor_xy": [
+    -111.9717703,
+    33.437361
+   ],
+   "start": "11648",
+   "end": "11650"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.514,
+   "turn_deg": 9.9,
+   "mid_xy": [
+    -111.967639,
+    33.4376828
+   ],
+   "anchor_xy": [
+    -111.9717703,
+    33.437361
+   ],
+   "start": "11648",
+   "end": "11651"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.109,
+   "turn_deg": 0.1,
+   "mid_xy": [
+    -111.96114431488093,
+    33.43716510158923
+   ],
+   "anchor_xy": [
+    -111.96114431488093,
+    33.43716510158923
+   ],
+   "start": "11651",
+   "end": "12038"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.305,
+   "turn_deg": -38.5,
+   "mid_xy": [
+    -111.96471975478923,
+    33.43781902346704
+   ],
+   "anchor_xy": [
+    -111.9671411,
+    33.4397815
+   ],
+   "start": "11654",
+   "end": "11651"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.18,
+   "turn_deg": -19.4,
+   "mid_xy": [
+    -111.964382,
+    33.4394835
+   ],
+   "anchor_xy": [
+    -111.96598,
+    33.4396174
+   ],
+   "start": "11659",
+   "end": "11652"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.38,
+   "turn_deg": 31.9,
+   "mid_xy": [
+    -111.9667508,
+    33.4401953
+   ],
+   "anchor_xy": [
+    -111.968363,
+    33.4418246
+   ],
+   "start": "11659",
+   "end": "11664"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.384,
+   "turn_deg": -15.0,
+   "mid_xy": [
+    -111.964087,
+    33.4391707
+   ],
+   "anchor_xy": [
+    -111.959806,
+    33.4376385
+   ],
+   "start": "11660",
+   "end": "11652"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.396,
+   "turn_deg": -8.4,
+   "mid_xy": [
+    -111.9684183,
+    33.4480928
+   ],
+   "anchor_xy": [
+    -111.9687704,
+    33.4451216
+   ],
+   "start": "11719",
+   "end": "11746"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.375,
+   "turn_deg": -7.0,
+   "mid_xy": [
+    -111.9693634,
+    33.4481864
+   ],
+   "anchor_xy": [
+    -111.969098,
+    33.4454536
+   ],
+   "start": "11730",
+   "end": "11666"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.123,
+   "turn_deg": -2.2,
+   "mid_xy": [
+    -111.96105743757259,
+    33.438569431783
+   ],
+   "anchor_xy": [
+    -111.96105743757259,
+    33.438569431783
+   ],
+   "start": "12033",
+   "end": "11659"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.3,
+   "turn_deg": -13.1,
+   "mid_xy": [
+    -111.9530192,
+    33.4360246
+   ],
+   "anchor_xy": [
+    -111.950993,
+    33.4360399
+   ],
+   "start": "12049",
+   "end": "12062"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.372,
+   "turn_deg": -5.4,
+   "mid_xy": [
+    -111.9464510415945,
+    33.43556530322013
+   ],
+   "anchor_xy": [
+    -111.9431858,
+    33.4355463
+   ],
+   "start": "12064",
+   "end": "20215"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 1.619,
+   "turn_deg": 103.0,
+   "mid_xy": [
+    -111.9636945,
+    33.3877324
+   ],
+   "anchor_xy": [
+    -111.9501241,
+    33.3856756
+   ],
+   "start": "13371",
+   "end": "13376"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 1.109,
+   "turn_deg": -2.5,
+   "mid_xy": [
+    -111.9671405,
+    33.3930368
+   ],
+   "anchor_xy": [
+    -111.9671405,
+    33.3930368
+   ],
+   "start": "13505",
+   "end": "13508"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.157,
+   "turn_deg": 22.1,
+   "mid_xy": [
+    -111.9694759,
+    33.4078967
+   ],
+   "anchor_xy": [
+    -111.9694759,
+    33.4078967
+   ],
+   "start": "13508",
+   "end": "13826"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.291,
+   "turn_deg": -10.2,
+   "mid_xy": [
+    -111.9704644,
+    33.408193
+   ],
+   "anchor_xy": [
+    -111.9704644,
+    33.408193
+   ],
+   "start": "13508",
+   "end": "13830"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.992,
+   "turn_deg": -68.5,
+   "mid_xy": [
+    -111.967308,
+    33.3892087
+   ],
+   "anchor_xy": [
+    -111.967676,
+    33.3979911
+   ],
+   "start": "13516",
+   "end": "13554"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.419,
+   "turn_deg": -19.6,
+   "mid_xy": [
+    -111.9685096,
+    33.392799
+   ],
+   "anchor_xy": [
+    -111.9677678,
+    33.3961556
+   ],
+   "start": "13517",
+   "end": "13576"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.543,
+   "turn_deg": -30.8,
+   "mid_xy": [
+    -111.9689289,
+    33.3879513
+   ],
+   "anchor_xy": [
+    -111.9678428,
+    33.3922814
+   ],
+   "start": "13579",
+   "end": "14838"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.124,
+   "turn_deg": -22.3,
+   "mid_xy": [
+    -111.9695442,
+    33.3910225
+   ],
+   "anchor_xy": [
+    -111.9693181,
+    33.3920772
+   ],
+   "start": "13692",
+   "end": "13576"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.809,
+   "turn_deg": 51.6,
+   "mid_xy": [
+    -111.97561299899036,
+    33.41036159341195
+   ],
+   "anchor_xy": [
+    -111.9689053,
+    33.4057617
+   ],
+   "start": "13721",
+   "end": "11214"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.388,
+   "turn_deg": -52.8,
+   "mid_xy": [
+    -111.974263,
+    33.4116827
+   ],
+   "anchor_xy": [
+    -111.974263,
+    33.4116827
+   ],
+   "start": "13816",
+   "end": "11223"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.583,
+   "turn_deg": -7.3,
+   "mid_xy": [
+    -111.9764827,
+    33.4111131
+   ],
+   "anchor_xy": [
+    -111.9819475,
+    33.4111272
+   ],
+   "start": "13818",
+   "end": "13856"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.093,
+   "turn_deg": 87.2,
+   "mid_xy": [
+    -111.9691817,
+    33.4089591
+   ],
+   "anchor_xy": [
+    -111.9691817,
+    33.4089591
+   ],
+   "start": "13826",
+   "end": "13773"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.039,
+   "turn_deg": -6.4,
+   "mid_xy": [
+    -111.96949094406459,
+    33.409026018452636
+   ],
+   "anchor_xy": [
+    -111.96949094406459,
+    33.409026018452636
+   ],
+   "start": "13826",
+   "end": "13823"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.241,
+   "turn_deg": -24.2,
+   "mid_xy": [
+    -111.9738418,
+    33.4106054
+   ],
+   "anchor_xy": [
+    -111.9738418,
+    33.4106054
+   ],
+   "start": "13830",
+   "end": "11211"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.371,
+   "turn_deg": -28.7,
+   "mid_xy": [
+    -111.9766873,
+    33.4112725
+   ],
+   "anchor_xy": [
+    -111.9766873,
+    33.4112725
+   ],
+   "start": "13830",
+   "end": "13846"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.039,
+   "turn_deg": -16.0,
+   "mid_xy": [
+    -111.9735568,
+    33.4081694
+   ],
+   "anchor_xy": [
+    -111.9735568,
+    33.4081694
+   ],
+   "start": "13831",
+   "end": "13834"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.197,
+   "turn_deg": 26.7,
+   "mid_xy": [
+    -111.9716501,
+    33.4074484
+   ],
+   "anchor_xy": [
+    -111.9705716,
+    33.4066195
+   ],
+   "start": "13834",
+   "end": "13687"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.103,
+   "turn_deg": 45.4,
+   "mid_xy": [
+    -111.9741799,
+    33.4082208
+   ],
+   "anchor_xy": [
+    -111.9741799,
+    33.4082208
+   ],
+   "start": "13835",
+   "end": "13834"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.187,
+   "turn_deg": 1.1,
+   "mid_xy": [
+    -111.9793791,
+    33.4114216
+   ],
+   "anchor_xy": [
+    -111.9793791,
+    33.4114216
+   ],
+   "start": "13846",
+   "end": "11207"
+  },
+  {
+   "token": "RAMP_LOOP",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.286,
+   "turn_deg": 212.5,
+   "mid_xy": [
+    -111.976792,
+    33.4086429
+   ],
+   "anchor_xy": [
+    -111.9784773,
+    33.410114
+   ],
+   "start": "13847",
+   "end": "11208"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.169,
+   "turn_deg": 18.2,
+   "mid_xy": [
+    -111.9755705,
+    33.4094313
+   ],
+   "anchor_xy": [
+    -111.9755705,
+    33.4094313
+   ],
+   "start": "13847",
+   "end": "13849"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.036,
+   "turn_deg": 1.0,
+   "mid_xy": [
+    -111.9742587,
+    33.4086773
+   ],
+   "anchor_xy": [
+    -111.9742587,
+    33.4086773
+   ],
+   "start": "13849",
+   "end": "13836"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.043,
+   "turn_deg": 61.2,
+   "mid_xy": [
+    -111.974373,
+    33.4086114
+   ],
+   "anchor_xy": [
+    -111.974373,
+    33.4086114
+   ],
+   "start": "13849",
+   "end": "13837"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.212,
+   "turn_deg": 21.4,
+   "mid_xy": [
+    -111.979043,
+    33.4104756
+   ],
+   "anchor_xy": [
+    -111.979043,
+    33.4104756
+   ],
+   "start": "13854",
+   "end": "13847"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.164,
+   "turn_deg": 24.8,
+   "mid_xy": [
+    -111.9788735,
+    33.4098122
+   ],
+   "anchor_xy": [
+    -111.9784362,
+    33.4093378
+   ],
+   "start": "13854",
+   "end": "13853"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.192,
+   "turn_deg": -13.7,
+   "mid_xy": [
+    -111.982315,
+    33.410554
+   ],
+   "anchor_xy": [
+    -111.9840523,
+    33.4108145
+   ],
+   "start": "13879",
+   "end": "13854"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.432,
+   "turn_deg": -13.2,
+   "mid_xy": [
+    -111.9676298,
+    33.3780524
+   ],
+   "anchor_xy": [
+    -111.9677991,
+    33.3759744
+   ],
+   "start": "14638",
+   "end": "14669"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.355,
+   "turn_deg": -18.3,
+   "mid_xy": [
+    -111.9684419,
+    33.3753106
+   ],
+   "anchor_xy": [
+    -111.9681569,
+    33.3730062
+   ],
+   "start": "14639",
+   "end": "1336"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.127,
+   "turn_deg": 1.0,
+   "mid_xy": [
+    -111.9674753,
+    33.3834247
+   ],
+   "anchor_xy": [
+    -111.9674753,
+    33.3834247
+   ],
+   "start": "14669",
+   "end": "14847"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.429,
+   "turn_deg": -17.2,
+   "mid_xy": [
+    -111.9682975,
+    33.378045
+   ],
+   "anchor_xy": [
+    -111.9681498,
+    33.3762119
+   ],
+   "start": "14674",
+   "end": "14637"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.142,
+   "turn_deg": 3.5,
+   "mid_xy": [
+    -111.9683482,
+    33.3812299
+   ],
+   "anchor_xy": [
+    -111.9683482,
+    33.3812299
+   ],
+   "start": "14674",
+   "end": "14677"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.139,
+   "turn_deg": -8.7,
+   "mid_xy": [
+    -111.9686233,
+    33.3791926
+   ],
+   "anchor_xy": [
+    -111.9686233,
+    33.3791926
+   ],
+   "start": "14677",
+   "end": "14645"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.216,
+   "turn_deg": 44.5,
+   "mid_xy": [
+    -111.9671988,
+    33.3866787
+   ],
+   "anchor_xy": [
+    -111.9676438,
+    33.3849569
+   ],
+   "start": "14684",
+   "end": "14839"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.195,
+   "turn_deg": 14.3,
+   "mid_xy": [
+    -111.9680739,
+    33.386462
+   ],
+   "anchor_xy": [
+    -111.9683823,
+    33.387612
+   ],
+   "start": "14829",
+   "end": "14679"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.209,
+   "turn_deg": 4.9,
+   "mid_xy": [
+    -111.9683296,
+    33.3871451
+   ],
+   "anchor_xy": [
+    -111.9683823,
+    33.387612
+   ],
+   "start": "14829",
+   "end": "14838"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.291,
+   "turn_deg": -14.5,
+   "mid_xy": [
+    -111.9683808,
+    33.381846
+   ],
+   "anchor_xy": [
+    -111.9683808,
+    33.381846
+   ],
+   "start": "14838",
+   "end": "14677"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.205,
+   "turn_deg": -30.2,
+   "mid_xy": [
+    -111.966212,
+    33.3896986
+   ],
+   "anchor_xy": [
+    -111.966212,
+    33.3896986
+   ],
+   "start": "14839",
+   "end": "13505"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.349,
+   "turn_deg": 50.0,
+   "mid_xy": [
+    -111.9653584,
+    33.388955
+   ],
+   "anchor_xy": [
+    -111.9621682,
+    33.3877843
+   ],
+   "start": "14843",
+   "end": "13505"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.556,
+   "turn_deg": 76.9,
+   "mid_xy": [
+    -111.96615739082307,
+    33.38899107323625
+   ],
+   "anchor_xy": [
+    -111.9621682,
+    33.3877843
+   ],
+   "start": "14843",
+   "end": "13582"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.27,
+   "turn_deg": 10.4,
+   "mid_xy": [
+    -111.9671066,
+    33.3860568
+   ],
+   "anchor_xy": [
+    -111.9671066,
+    33.3860568
+   ],
+   "start": "14847",
+   "end": "14839"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.677,
+   "turn_deg": 93.6,
+   "mid_xy": [
+    -111.96445675509248,
+    33.387384005132354
+   ],
+   "anchor_xy": [
+    -111.9583104,
+    33.3864684
+   ],
+   "start": "14847",
+   "end": "14903"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.935,
+   "turn_deg": -109.7,
+   "mid_xy": [
+    -111.9664163,
+    33.3881588
+   ],
+   "anchor_xy": [
+    -111.9581954,
+    33.3867543
+   ],
+   "start": "14894",
+   "end": "14674"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.351,
+   "turn_deg": -9.8,
+   "mid_xy": [
+    -111.9573588,
+    33.3859373
+   ],
+   "anchor_xy": [
+    -111.955124,
+    33.3855488
+   ],
+   "start": "14910",
+   "end": "14959"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.502,
+   "turn_deg": 18.5,
+   "mid_xy": [
+    -111.9594974,
+    33.3876393
+   ],
+   "anchor_xy": [
+    -111.9527655,
+    33.3856931
+   ],
+   "start": "14960",
+   "end": "14918"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.673,
+   "turn_deg": -5.9,
+   "mid_xy": [
+    -111.9393196,
+    33.3851065
+   ],
+   "anchor_xy": [
+    -111.9453019,
+    33.3854201
+   ],
+   "start": "15451",
+   "end": "15609"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.276,
+   "turn_deg": -6.8,
+   "mid_xy": [
+    -111.939948,
+    33.3860231
+   ],
+   "anchor_xy": [
+    -111.9442985,
+    33.3856779
+   ],
+   "start": "15549",
+   "end": "15450"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.328,
+   "turn_deg": -5.6,
+   "mid_xy": [
+    -111.9382586,
+    33.385906
+   ],
+   "anchor_xy": [
+    -111.933892,
+    33.3857087
+   ],
+   "start": "15610",
+   "end": "15549"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.803,
+   "turn_deg": -7.6,
+   "mid_xy": [
+    -111.92625821574144,
+    33.38504599901778
+   ],
+   "anchor_xy": [
+    -111.9324754,
+    33.3854492
+   ],
+   "start": "15773",
+   "end": "16490"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.836,
+   "turn_deg": -7.0,
+   "mid_xy": [
+    -111.90894481603833,
+    33.385169201072
+   ],
+   "anchor_xy": [
+    -111.9163787,
+    33.3855287
+   ],
+   "start": "16491",
+   "end": "24768"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.814,
+   "turn_deg": -13.1,
+   "mid_xy": [
+    -111.926358,
+    33.3861649
+   ],
+   "anchor_xy": [
+    -111.9186492,
+    33.3858203
+   ],
+   "start": "16501",
+   "end": "15774"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.358,
+   "turn_deg": -8.2,
+   "mid_xy": [
+    -111.90942355355826,
+    33.386241696522006
+   ],
+   "anchor_xy": [
+    -111.9152171,
+    33.3857964
+   ],
+   "start": "16600",
+   "end": "16500"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 1.373,
+   "turn_deg": 95.1,
+   "mid_xy": [
+    -111.8935083,
+    33.3850397
+   ],
+   "anchor_xy": [
+    -111.910471,
+    33.3855719
+   ],
+   "start": "16628",
+   "end": "24505"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.175,
+   "turn_deg": -4.9,
+   "mid_xy": [
+    -111.94464829252122,
+    33.43609475189273
+   ],
+   "anchor_xy": [
+    -111.942658,
+    33.4357953
+   ],
+   "start": "20203",
+   "end": "20205"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.595,
+   "turn_deg": 10.1,
+   "mid_xy": [
+    -111.9536461,
+    33.436692
+   ],
+   "anchor_xy": [
+    -111.9536461,
+    33.436692
+   ],
+   "start": "20205",
+   "end": "12045"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.183,
+   "turn_deg": -4.0,
+   "mid_xy": [
+    -111.94727632459454,
+    33.436427533867274
+   ],
+   "anchor_xy": [
+    -111.94727632459454,
+    33.436427533867274
+   ],
+   "start": "20205",
+   "end": "20211"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.043,
+   "turn_deg": 3.4,
+   "mid_xy": [
+    -111.9490477,
+    33.4365882
+   ],
+   "anchor_xy": [
+    -111.9490477,
+    33.4365882
+   ],
+   "start": "20211",
+   "end": "20207"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.065,
+   "turn_deg": 75.1,
+   "mid_xy": [
+    -111.9492951,
+    33.4367807
+   ],
+   "anchor_xy": [
+    -111.9492951,
+    33.4367807
+   ],
+   "start": "20211",
+   "end": "20212"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.425,
+   "turn_deg": 1.1,
+   "mid_xy": [
+    -111.93043803123126,
+    33.435487979408286
+   ],
+   "anchor_xy": [
+    -111.9343622,
+    33.4350119
+   ],
+   "start": "20468",
+   "end": "20471"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.056,
+   "turn_deg": 72.7,
+   "mid_xy": [
+    -111.926484,
+    33.4356482
+   ],
+   "anchor_xy": [
+    -111.926484,
+    33.4356482
+   ],
+   "start": "20471",
+   "end": "20510"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.058,
+   "turn_deg": -52.7,
+   "mid_xy": [
+    -111.9264933,
+    33.4358421
+   ],
+   "anchor_xy": [
+    -111.9264933,
+    33.4358421
+   ],
+   "start": "20471",
+   "end": "20527"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.33,
+   "turn_deg": -23.1,
+   "mid_xy": [
+    -111.93042034829521,
+    33.43615678264114
+   ],
+   "anchor_xy": [
+    -111.9325158,
+    33.4356206
+   ],
+   "start": "20485",
+   "end": "20465"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.041,
+   "turn_deg": -56.2,
+   "mid_xy": [
+    -111.9265119,
+    33.4363903
+   ],
+   "anchor_xy": [
+    -111.9265119,
+    33.4363903
+   ],
+   "start": "20513",
+   "end": "20485"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.064,
+   "turn_deg": 63.6,
+   "mid_xy": [
+    -111.92652761236627,
+    33.43658409200139
+   ],
+   "anchor_xy": [
+    -111.92652761236627,
+    33.43658409200139
+   ],
+   "start": "20515",
+   "end": "20485"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.07,
+   "turn_deg": 72.1,
+   "mid_xy": [
+    -111.92599017498115,
+    33.43658286459295
+   ],
+   "anchor_xy": [
+    -111.92599017498115,
+    33.43658286459295
+   ],
+   "start": "20520",
+   "end": "20519"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.056,
+   "turn_deg": -52.4,
+   "mid_xy": [
+    -111.92604910025975,
+    33.43634051345926
+   ],
+   "anchor_xy": [
+    -111.92604910025975,
+    33.43634051345926
+   ],
+   "start": "20520",
+   "end": "20528"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.073,
+   "turn_deg": -71.9,
+   "mid_xy": [
+    -111.9259515,
+    33.4357206
+   ],
+   "anchor_xy": [
+    -111.9259515,
+    33.4357206
+   ],
+   "start": "20528",
+   "end": "20543"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.016,
+   "turn_deg": -2.1,
+   "mid_xy": [
+    -111.926284,
+    33.4360178
+   ],
+   "anchor_xy": [
+    -111.926284,
+    33.4360178
+   ],
+   "start": "20530",
+   "end": "20531"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.338,
+   "turn_deg": -12.2,
+   "mid_xy": [
+    -111.9227654,
+    33.4364607
+   ],
+   "anchor_xy": [
+    -111.9196264,
+    33.4362077
+   ],
+   "start": "20534",
+   "end": "20520"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.075,
+   "turn_deg": 66.5,
+   "mid_xy": [
+    -111.9259929,
+    33.4355002
+   ],
+   "anchor_xy": [
+    -111.9259929,
+    33.4355002
+   ],
+   "start": "20540",
+   "end": "20543"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.255,
+   "turn_deg": -8.1,
+   "mid_xy": [
+    -111.9230675,
+    33.4357517
+   ],
+   "anchor_xy": [
+    -111.9209308,
+    33.4359384
+   ],
+   "start": "20543",
+   "end": "20508"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.302,
+   "turn_deg": -22.8,
+   "mid_xy": [
+    -111.9113355,
+    33.4365985
+   ],
+   "anchor_xy": [
+    -111.9147835,
+    33.4361745
+   ],
+   "start": "21176",
+   "end": "21255"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.444,
+   "turn_deg": -24.0,
+   "mid_xy": [
+    -111.9112751,
+    33.4363217
+   ],
+   "anchor_xy": [
+    -111.9170208,
+    33.4359126
+   ],
+   "start": "21254",
+   "end": "21260"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.269,
+   "turn_deg": 4.9,
+   "mid_xy": [
+    -111.8908461,
+    33.4188624
+   ],
+   "anchor_xy": [
+    -111.8911171,
+    33.4172539
+   ],
+   "start": "22429",
+   "end": "22465"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.372,
+   "turn_deg": 8.8,
+   "mid_xy": [
+    -111.8917329,
+    33.4114557
+   ],
+   "anchor_xy": [
+    -111.8915452,
+    33.4142477
+   ],
+   "start": "22431",
+   "end": "23538"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.309,
+   "turn_deg": -1.4,
+   "mid_xy": [
+    -111.8916633,
+    33.4182891
+   ],
+   "anchor_xy": [
+    -111.8914903,
+    33.4165545
+   ],
+   "start": "22457",
+   "end": "22430"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.295,
+   "turn_deg": 0.5,
+   "mid_xy": [
+    -111.8906493,
+    33.4280931
+   ],
+   "anchor_xy": [
+    -111.891023,
+    33.424928
+   ],
+   "start": "22510",
+   "end": "22688"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.515,
+   "turn_deg": 56.7,
+   "mid_xy": [
+    -111.8892912,
+    33.4320854
+   ],
+   "anchor_xy": [
+    -111.8892912,
+    33.4320854
+   ],
+   "start": "22688",
+   "end": "22729"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.725,
+   "turn_deg": -80.9,
+   "mid_xy": [
+    -111.8913227,
+    33.4340482
+   ],
+   "anchor_xy": [
+    -111.8913227,
+    33.4340482
+   ],
+   "start": "22688",
+   "end": "22753"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.162,
+   "turn_deg": 4.0,
+   "mid_xy": [
+    -111.8914004,
+    33.4283155
+   ],
+   "anchor_xy": [
+    -111.8912967,
+    33.4266958
+   ],
+   "start": "22701",
+   "end": "22516"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.358,
+   "turn_deg": 5.2,
+   "mid_xy": [
+    -111.89063967605995,
+    33.43192385448075
+   ],
+   "anchor_xy": [
+    -111.890829,
+    33.4343926
+   ],
+   "start": "22706",
+   "end": "22714"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.193,
+   "turn_deg": -20.7,
+   "mid_xy": [
+    -111.8818513,
+    33.4343634
+   ],
+   "anchor_xy": [
+    -111.8813507,
+    33.434576
+   ],
+   "start": "22729",
+   "end": "23143"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.836,
+   "turn_deg": -119.1,
+   "mid_xy": [
+    -111.8926429,
+    33.4352473
+   ],
+   "anchor_xy": [
+    -111.8926429,
+    33.4352473
+   ],
+   "start": "22730",
+   "end": "22701"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.573,
+   "turn_deg": 55.8,
+   "mid_xy": [
+    -111.8896732,
+    33.4363014
+   ],
+   "anchor_xy": [
+    -111.8896732,
+    33.4363014
+   ],
+   "start": "22730",
+   "end": "23108"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.378,
+   "turn_deg": -5.0,
+   "mid_xy": [
+    -111.891533,
+    33.4316433
+   ],
+   "anchor_xy": [
+    -111.891169,
+    33.4349055
+   ],
+   "start": "22740",
+   "end": "22703"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.059,
+   "turn_deg": -14.6,
+   "mid_xy": [
+    -111.8979314,
+    33.4359089
+   ],
+   "anchor_xy": [
+    -111.8982934,
+    33.4359041
+   ],
+   "start": "22753",
+   "end": "23057"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.646,
+   "turn_deg": 42.0,
+   "mid_xy": [
+    -111.8936925,
+    33.4331888
+   ],
+   "anchor_xy": [
+    -111.8984568,
+    33.4356374
+   ],
+   "start": "22754",
+   "end": "22701"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 1.249,
+   "turn_deg": -109.8,
+   "mid_xy": [
+    -111.8894007,
+    33.4326715
+   ],
+   "anchor_xy": [
+    -111.8984568,
+    33.4356374
+   ],
+   "start": "22754",
+   "end": "23108"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.34,
+   "turn_deg": -15.9,
+   "mid_xy": [
+    -111.8911395,
+    33.4498583
+   ],
+   "anchor_xy": [
+    -111.8910167,
+    33.446319
+   ],
+   "start": "23079",
+   "end": "23081"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.761,
+   "turn_deg": -18.8,
+   "mid_xy": [
+    -111.889796,
+    33.451471
+   ],
+   "anchor_xy": [
+    -111.8906908,
+    33.4462168
+   ],
+   "start": "23082",
+   "end": "23093"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.385,
+   "turn_deg": -3.1,
+   "mid_xy": [
+    -111.8905535,
+    33.4534575
+   ],
+   "anchor_xy": [
+    -111.8898482,
+    33.4568805
+   ],
+   "start": "23095",
+   "end": "23087"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.203,
+   "turn_deg": -25.2,
+   "mid_xy": [
+    -111.8912084,
+    33.4426921
+   ],
+   "anchor_xy": [
+    -111.8910538,
+    33.4432204
+   ],
+   "start": "23104",
+   "end": "23113"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.211,
+   "turn_deg": -4.4,
+   "mid_xy": [
+    -111.8906025,
+    33.4433349
+   ],
+   "anchor_xy": [
+    -111.8907115,
+    33.4444606
+   ],
+   "start": "23108",
+   "end": "23105"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.581,
+   "turn_deg": 79.0,
+   "mid_xy": [
+    -111.8926181,
+    33.4362437
+   ],
+   "anchor_xy": [
+    -111.8926181,
+    33.4362437
+   ],
+   "start": "23113",
+   "end": "22753"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.835,
+   "turn_deg": -96.2,
+   "mid_xy": [
+    -111.890814,
+    33.4341409
+   ],
+   "anchor_xy": [
+    -111.890814,
+    33.4341409
+   ],
+   "start": "23113",
+   "end": "22729"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.427,
+   "turn_deg": 32.1,
+   "mid_xy": [
+    -111.8854995,
+    33.4341411
+   ],
+   "anchor_xy": [
+    -111.8796563,
+    33.4352675
+   ],
+   "start": "23147",
+   "end": "22730"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.379,
+   "turn_deg": -0.9,
+   "mid_xy": [
+    -111.8908864,
+    33.4110323
+   ],
+   "anchor_xy": [
+    -111.8911987,
+    33.4137733
+   ],
+   "start": "23536",
+   "end": "22428"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.414,
+   "turn_deg": 1.1,
+   "mid_xy": [
+    -111.891559,
+    33.4031853
+   ],
+   "anchor_xy": [
+    -111.891288,
+    33.4005301
+   ],
+   "start": "23563",
+   "end": "23559"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.416,
+   "turn_deg": -0.4,
+   "mid_xy": [
+    -111.8906514,
+    33.404233
+   ],
+   "anchor_xy": [
+    -111.8909793,
+    33.4005119
+   ],
+   "start": "23567",
+   "end": "23571"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.33,
+   "turn_deg": 4.9,
+   "mid_xy": [
+    -111.8916641,
+    33.3963689
+   ],
+   "anchor_xy": [
+    -111.8912955,
+    33.3990156
+   ],
+   "start": "24307",
+   "end": "24309"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.206,
+   "turn_deg": -13.0,
+   "mid_xy": [
+    -111.891514,
+    33.3933545
+   ],
+   "anchor_xy": [
+    -111.891325,
+    33.394813
+   ],
+   "start": "24308",
+   "end": "24376"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.382,
+   "turn_deg": -2.8,
+   "mid_xy": [
+    -111.8907178,
+    33.3964716
+   ],
+   "anchor_xy": [
+    -111.890968,
+    33.3991261
+   ],
+   "start": "24312",
+   "end": "24311"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.811,
+   "turn_deg": -91.1,
+   "mid_xy": [
+    -111.8910123,
+    33.3863887
+   ],
+   "anchor_xy": [
+    -111.8910123,
+    33.3863887
+   ],
+   "start": "24376",
+   "end": "24463"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.518,
+   "turn_deg": 57.8,
+   "mid_xy": [
+    -111.8922962,
+    33.3873821
+   ],
+   "anchor_xy": [
+    -111.8922962,
+    33.3873821
+   ],
+   "start": "24376",
+   "end": "24599"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.215,
+   "turn_deg": -0.2,
+   "mid_xy": [
+    -111.8821834,
+    33.3855682
+   ],
+   "anchor_xy": [
+    -111.8803283,
+    33.3856431
+   ],
+   "start": "24463",
+   "end": "25616"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.73,
+   "turn_deg": -97.3,
+   "mid_xy": [
+    -111.8911438,
+    33.388152
+   ],
+   "anchor_xy": [
+    -111.8844081,
+    33.3858908
+   ],
+   "start": "24469",
+   "end": "24437"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.276,
+   "turn_deg": -12.1,
+   "mid_xy": [
+    -111.8938314,
+    33.3861931
+   ],
+   "anchor_xy": [
+    -111.8907039,
+    33.3858465
+   ],
+   "start": "24472",
+   "end": "24599"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.504,
+   "turn_deg": 51.3,
+   "mid_xy": [
+    -111.8892204,
+    33.384894
+   ],
+   "anchor_xy": [
+    -111.8892204,
+    33.384894
+   ],
+   "start": "24473",
+   "end": "24463"
+  },
+  {
+   "token": "RAMP_SEMI_DIRECT",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.706,
+   "turn_deg": -120.6,
+   "mid_xy": [
+    -111.8914948,
+    33.3859951
+   ],
+   "anchor_xy": [
+    -111.8989901,
+    33.385846
+   ],
+   "start": "24473",
+   "end": "24521"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.168,
+   "turn_deg": -16.7,
+   "mid_xy": [
+    -111.8915703,
+    33.381886
+   ],
+   "anchor_xy": [
+    -111.8924599,
+    33.3803658
+   ],
+   "start": "24502",
+   "end": "24473"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "FF",
+   "gores": 2,
+   "miles": 0.667,
+   "turn_deg": -97.0,
+   "mid_xy": [
+    -111.8912084,
+    33.3837303
+   ],
+   "anchor_xy": [
+    -111.8975742,
+    33.3856102
+   ],
+   "start": "24517",
+   "end": "24390"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.901,
+   "turn_deg": -6.4,
+   "mid_xy": [
+    -111.8850654,
+    33.3851091
+   ],
+   "anchor_xy": [
+    -111.89027,
+    33.3856347
+   ],
+   "start": "24518",
+   "end": "25615"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.431,
+   "turn_deg": 12.0,
+   "mid_xy": [
+    -111.8974837,
+    33.3860404
+   ],
+   "anchor_xy": [
+    -111.8974837,
+    33.3860404
+   ],
+   "start": "24599",
+   "end": "24656"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.238,
+   "turn_deg": -1.8,
+   "mid_xy": [
+    -111.9050079,
+    33.385974
+   ],
+   "anchor_xy": [
+    -111.9069667,
+    33.3858549
+   ],
+   "start": "24656",
+   "end": "16604"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 0,
+   "miles": 0.359,
+   "turn_deg": 2.1,
+   "mid_xy": [
+    -111.9079925,
+    33.3861619
+   ],
+   "anchor_xy": [
+    -111.9079925,
+    33.3861619
+   ],
+   "start": "24656",
+   "end": "16600"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.383,
+   "turn_deg": 3.2,
+   "mid_xy": [
+    -111.8930723,
+    33.3738423
+   ],
+   "anchor_xy": [
+    -111.8934053,
+    33.3713538
+   ],
+   "start": "25149",
+   "end": "25150"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 0.336,
+   "turn_deg": -11.3,
+   "mid_xy": [
+    -111.893786,
+    33.3745794
+   ],
+   "anchor_xy": [
+    -111.8936528,
+    33.3726188
+   ],
+   "start": "25160",
+   "end": "25151"
+  },
+  {
+   "token": "RAMP_DIRECTIONAL",
+   "kind": "SERVICE",
+   "gores": 1,
+   "miles": 1.644,
+   "turn_deg": 77.3,
+   "mid_xy": [
+    -111.8881433,
+    33.3863418
+   ],
+   "anchor_xy": [
+    -111.8910108,
+    33.395669
+   ],
+   "start": "25670",
+   "end": "24310"
+  }
+ ]
+}
