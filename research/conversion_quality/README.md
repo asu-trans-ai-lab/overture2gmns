@@ -7,6 +7,7 @@ not runtime). This folder is self-contained and version-controlled.
 
 | file | what |
 |---|---|
+| [MAP_NETWORK_QAQC_NEEDS.md](MAP_NETWORK_QAQC_NEEDS.md) | research synthesis: *why* map-network QA/QC is needed, the ISO 19157 + routing + model dimensions it must cover, and how needs split across overture2gmns vs qaqc4gmns (fully cited) |
 | [CONVERSION_QUALITY_REPORT.md](CONVERSION_QUALITY_REPORT.md) | the report — six quality dimensions, headline verdict, defect changelog |
 | `aggregate_qaqc.py` | reproducible aggregator: reads `bench/out/` artifacts → `evidence/` + `qaqc_dataset.json` |
 | `qaqc_dataset.json` | one consolidated machine-readable dataset (all regions, all dimensions) |
