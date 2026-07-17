@@ -234,27 +234,54 @@ interpretable signal and ΔVHT absorbs those coding differences too. Neither
 case is a validated forecast — there is no observed OD, and capacity is
 inferred (§8 opening).
 
-### Agency-model check — TRMG2 (Triangle, NC)
+### Agency-model check — TRMG2 (Triangle, NC) — PRELIMINARY
 
-The same identical-demand procedure, now comparing the open
-overture2gmns Triangle network against the **agency TRMG2 model network**
-(an independently built, TransCAD-sourced planning network):
+> ⚠️ **Preliminary synthetic-demand reasonableness result, before
+> assignment-ready TAZ, connector, and first-through-node controls.** This is
+> *not* the final TRMG2 behavioral validation. It uses 25 synthetic grid zones
+> (a fast self-demo), not TRMG2's own 3,247-TAZ / OD system; connectors are
+> independently nearest-node snapped, not transferred from the agency zone
+> design; VMT/VHT are not yet split into physical vs centroid-connector
+> contributions; and the first-through-node / no-through-centroid invariant is
+> not yet independently verified. The updated headline will be produced only
+> after the assignment-ready network layer (§below) is built and validated.
+
+The same identical-demand procedure, comparing the open overture2gmns Triangle
+network against the **agency TRMG2 model network** (independently built,
+TransCAD-sourced):
 
 | network | links | VMT | VHT | max v/c |
 |---|---:|---:|---:|---:|
 | agency TRMG2 (reference) | 75,939 | 774,590 | 23,088 | 0.76 |
 | overture2gmns Triangle | 353,574 | 795,234 | 24,779 | 1.20 |
-| **Δ (Overture vs agency)** | | **+2.7%** | **+7.3%** | |
+| **Δ (Overture vs agency)** | | **+2.7%** *(prelim)* | **+7.3%** *(prelim)* | |
 
-Under identical synthetic demand between the same 25 zone locations, the open
-Overture-derived network reproduces the agency model's aggregate **VMT within
-2.7%** and **VHT within 7.3%** — a strong reasonableness result for two
-networks built by completely different pipelines. The wider VHT gap is
-expected: the Overture network runs more congested (max v/c 1.20 vs 0.76)
-because its inferred, HCM-like per-lane capacity differs from the agency's
-period/service capacity (~950 vph/ln), so VHT absorbs that capacity-coding
-difference on top of any topology difference. This is an external
-*reasonableness* comparison, not a controlled network-isolation experiment.
+The wider VHT gap is expected — the Overture network runs more congested
+(max v/c 1.20 vs 0.76) because its inferred HCM-like per-lane capacity differs
+from the agency's period/service capacity (~950 vph/ln). But before this can
+be read as a behavioral result at all, both networks must be built into
+*equivalent assignment-ready networks*:
+
+- **Real demand.** Use TRMG2's own 3,247 TAZs and OD matrix, not synthetic
+  zones.
+- **Equivalent connectors.** Transfer the agency zone-access design to the
+  Overture network (same TAZ → equivalent access node), not independent
+  nearest-node snapping — connector placement materially moves VMT.
+- **First-through-node enforcement.** A centroid may be a path origin or
+  destination only, never an intermediate through node; verify
+  `N_through-centroid_paths = 0` on a re-indexed forward star
+  (`first_thru_node = Z+1`).
+- **Physical-only VMT/VHT.** Report roadway-link totals; centroid-connector
+  distance/time reported separately, never folded into the headline.
+- **Pre-assignment path validation.** Demand-weighted OD connectivity,
+  connector-count ≤ 2 per path, forward-star integrity, free-flow path
+  comparison — all before the congested assignment.
+
+Ownership of that work: the **assignment-ready builder** (TAZ/connector/
+node-index/forward-star construction + first-through-node) is a `gmns_ready`-
+class concern; **TAPLite4MPO** runs the shortest paths and assignment;
+**qaqc4gmns** compares the behavioral outputs; **overture2gmns** stays
+responsible only for the faithful Overture→GMNS conversion.
 
 **Read VMT, then VHT, with different confidence.** ΔVMT (path-length driven)
 is the robust signal: within ~1% in both a small city and a full metro, the
