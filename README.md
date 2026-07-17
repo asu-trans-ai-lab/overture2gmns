@@ -39,6 +39,25 @@ This is a controlled relative comparison, not a validated forecast.*
 so no freeway system interchange is recoverable — Overture's `subclass=link`
 survives, and overture2gmns detects all three Tempe system interchanges.*
 
+## Scope: conversion + verification (not general QA/QC)
+
+`overture2gmns` deliberately stays focused on the pipeline
+**Overture data → extraction → GMNS conversion → attribute cleaning →
+source-to-output verification**. Its `verify_conversion()` checks that the
+transformation faithfully preserves *its own* Overture source (linear-reference
+conservation, crosswalk completeness, attribute provenance, GMNS integrity):
+
+```python
+import overture2gmns as o2g
+result = o2g.verify_conversion("gmns_output")     # or: overture2gmns verify gmns_output
+print(o2g.verification_report_markdown(result))
+```
+
+Broader evaluation — comparing a network against *other* networks or against
+*observations* (agency-model comparison, TMC/INRIX matching, trajectory
+validation, assignment-based comparison, dashboards) — lives in the separate
+`qaqc4gmns` package, so each package's claims stay precise.
+
 ## Why a separate converter is needed
 
 Overture differs materially from raw OSM:

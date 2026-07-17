@@ -38,11 +38,27 @@ def build_parser() -> argparse.ArgumentParser:
     download_parser.add_argument("--no-connectors", action="store_true")
     download_parser.add_argument("--release", help="Overture release; default is latest")
     download_parser.add_argument("--stac", action="store_true", help="Use the STAC file index")
+
+    verify_parser = subparsers.add_parser(
+        "verify", help="Source-to-output conversion verification of a GMNS folder")
+    verify_parser.add_argument("gmns_folder", type=Path)
+    verify_parser.add_argument("--report", type=Path,
+                               help="write the markdown report to this path")
     return parser
 
 
 def main() -> None:
     args = build_parser().parse_args()
+    if args.command == "verify":
+        from .verification import verify_conversion, verification_report_markdown
+
+        result = verify_conversion(args.gmns_folder)
+        report = verification_report_markdown(result)
+        if args.report:
+            args.report.write_text(report, encoding="utf-8")
+        print(report)
+        raise SystemExit(0 if result["passed"] else 1)
+
     if args.command == "convert":
         network = get_net_from_file(
             args.segments,

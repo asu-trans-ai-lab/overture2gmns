@@ -22,6 +22,7 @@ from .postprocess import (
     generate_node_activity_info,
     generateNodeActivityInfo,
 )
+from .verification import verify_conversion, verification_report_markdown
 
 __all__ = [
     "Link",
@@ -44,6 +45,9 @@ __all__ = [
     "fillLinkAttributesWithDefaultValues",
     "generateNodeActivityInfo",
     "consolidateComplexIntersections",
+    # source-to-output conversion verification (in-scope QA)
+    "verify_conversion",
+    "verification_report_markdown",
 ]
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
