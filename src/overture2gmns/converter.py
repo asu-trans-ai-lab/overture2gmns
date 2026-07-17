@@ -272,11 +272,20 @@ def get_net_from_records(
         for start_lr, end_lr in zip(breakpoints, breakpoints[1:]):
             if end_lr - start_lr <= 1e-10:
                 continue
+
+            def _record_disposition(status: str) -> None:
+                network.interval_dispositions.append({
+                    "overture_segment_id": segment_id,
+                    "lr_start": float(start_lr), "lr_end": float(end_lr),
+                    "disposition": status,
+                })
+
             subline = substring(geometry, start_lr, end_lr, normalized=True)
             if isinstance(subline, LineString):
                 subline = _clean_linestring(subline)
             if not isinstance(subline, LineString) or subline.length == 0:
                 network.diagnostics["skipped_zero_length_piece"] += 1
+                _record_disposition("EXCLUDED_ZERO_LENGTH")
                 continue
 
             start_connector = _connector_at(record, start_lr)
@@ -293,6 +302,7 @@ def get_net_from_records(
             start_node = ensure_node(start_key, start_point, start_connector)
             end_node = ensure_node(end_key, end_point, end_connector)
             midpoint = (start_lr + end_lr) / 2.0
+            made = {"forward": False, "backward": False}
 
             for heading in ("forward", "backward"):
                 allowed = []
@@ -307,6 +317,7 @@ def get_net_from_records(
                         allowed.append(mode)
                 if not allowed:
                     continue
+                made[heading] = True
 
                 representative_mode = "auto" if "auto" in allowed else allowed[0]
                 speed = speed_limit_mph(
@@ -357,6 +368,17 @@ def get_net_from_records(
                 )
                 network.links[link.link_id] = link
                 next_link_id += 1
+
+            if made["forward"] and made["backward"]:
+                _record_disposition("GENERATED_BOTH")
+            elif made["forward"]:
+                _record_disposition("GENERATED_FORWARD")
+            elif made["backward"]:
+                _record_disposition("GENERATED_BACKWARD")
+            else:
+                # Valid geometry, but no requested mode is permitted in either
+                # direction — an explicit source access exclusion, not a loss.
+                _record_disposition("EXCLUDED_BY_ACCESS_RULE")
 
         if record.get("prohibited_transitions"):
             network.diagnostics["segments_with_unexported_turn_restrictions"] += 1

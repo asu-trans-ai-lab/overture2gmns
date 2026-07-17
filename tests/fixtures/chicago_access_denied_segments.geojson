@@ -1,0 +1,278 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "5045486b-e778-485b-b034-b4679fc04bb7",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.9628071,
+      41.6536581
+     ],
+     [
+      -87.9631345,
+      41.6536519
+     ],
+     [
+      -87.9632502,
+      41.6536497
+     ],
+     [
+      -87.9635147,
+      41.6536447
+     ],
+     [
+      -87.9640808,
+      41.6536341
+     ]
+    ]
+   },
+   "properties": {
+    "id": "5045486b-e778-485b-b034-b4679fc04bb7",
+    "subtype": "road",
+    "class": "residential",
+    "version": 1,
+    "connectors": [
+     {
+      "connector_id": "5a9a1ddd-5fd2-4059-8a9b-f298ccf53fd2",
+      "at": 0.0
+     },
+     {
+      "connector_id": "6f6de8e4-5e42-4273-a6fb-e69ebac35edd",
+      "at": 0.555548543
+     },
+     {
+      "connector_id": "1e67069c-a8d6-4a21-9ed6-4d868965e32e",
+      "at": 1.0
+     }
+    ],
+    "access_restrictions": [
+     {
+      "access_type": "denied",
+      "when": null,
+      "between": [
+       0.257041302,
+       0.347872613
+      ]
+     },
+     {
+      "access_type": "allowed",
+      "when": {
+       "during": null,
+       "heading": null,
+       "using": null,
+       "recognized": null,
+       "mode": [
+        "hgv"
+       ],
+       "vehicle": null
+      },
+      "between": [
+       0.257041302,
+       0.347872613
+      ]
+     }
+    ],
+    "speed_limits": null
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "242584f1-4aa4-4ea1-8d09-759e773a1293",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.4317071,
+      41.6287642
+     ],
+     [
+      -87.4315045,
+      41.6287613
+     ],
+     [
+      -87.4301305,
+      41.6287417
+     ],
+     [
+      -87.4299601,
+      41.6287404
+     ],
+     [
+      -87.4299578,
+      41.6288504
+     ],
+     [
+      -87.4301229,
+      41.6288527
+     ],
+     [
+      -87.431516,
+      41.6288732
+     ],
+     [
+      -87.431705,
+      41.628876
+     ]
+    ]
+   },
+   "properties": {
+    "id": "242584f1-4aa4-4ea1-8d09-759e773a1293",
+    "subtype": "road",
+    "class": "unclassified",
+    "version": 1,
+    "connectors": [
+     {
+      "connector_id": "2f397bd7-c35c-47fb-8c84-9aa61d5dab43",
+      "at": 0.0
+     },
+     {
+      "connector_id": "8657563b-bdba-47a7-bb14-a46fe93b6196",
+      "at": 0.433037194
+     },
+     {
+      "connector_id": "324fc4ae-c711-44c5-b0b2-a6d01ac2fbd5",
+      "at": 0.565447792
+     },
+     {
+      "connector_id": "a57f3b7a-4884-49d7-84f7-dde7bff6f7b3",
+      "at": 1.0
+     }
+    ],
+    "access_restrictions": [
+     {
+      "access_type": "denied",
+      "when": {
+       "during": null,
+       "heading": null,
+       "using": null,
+       "recognized": null,
+       "mode": [
+        "motor_vehicle"
+       ],
+       "vehicle": null
+      },
+      "between": [
+       0.433028099,
+       0.94808108
+      ]
+     },
+     {
+      "access_type": "allowed",
+      "when": {
+       "during": null,
+       "heading": null,
+       "using": null,
+       "recognized": [
+        "as_private"
+       ],
+       "mode": [
+        "motor_vehicle"
+       ],
+       "vehicle": null
+      },
+      "between": [
+       0.055660918,
+       0.433028099
+      ]
+     },
+     {
+      "access_type": "denied",
+      "when": {
+       "during": null,
+       "heading": "backward",
+       "using": null,
+       "recognized": null,
+       "mode": null,
+       "vehicle": null
+      },
+      "between": null
+     }
+    ],
+    "speed_limits": null
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "dfc825a8-63c5-419d-a850-090627d3086d",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.6926812,
+      41.8843945
+     ],
+     [
+      -87.6926851,
+      41.884468
+     ],
+     [
+      -87.6926857,
+      41.8844962
+     ],
+     [
+      -87.692687,
+      41.8845203
+     ],
+     [
+      -87.6926888,
+      41.8845585
+     ],
+     [
+      -87.6927295,
+      41.8864343
+     ],
+     [
+      -87.6927322,
+      41.8865017
+     ],
+     [
+      -87.6927344,
+      41.8865702
+     ]
+    ]
+   },
+   "properties": {
+    "id": "dfc825a8-63c5-419d-a850-090627d3086d",
+    "subtype": "road",
+    "class": "unclassified",
+    "version": 1,
+    "connectors": [
+     {
+      "connector_id": "64d1d49b-6257-4bc3-b8f3-502df31129f8",
+      "at": 0.0
+     },
+     {
+      "connector_id": "0d8c44e2-402f-4d5b-bd82-7a59bf4be564",
+      "at": 0.033802541
+     },
+     {
+      "connector_id": "0ae9a15a-907b-42e5-ae50-9a1d286c9f34",
+      "at": 0.046763133
+     },
+     {
+      "connector_id": "b6c8a112-5055-4680-9b11-467c7f51e3d9",
+      "at": 0.968512612
+     },
+     {
+      "connector_id": "2b1e8c89-c7af-4999-86cf-737d849e2528",
+      "at": 1.0
+     }
+    ],
+    "access_restrictions": [
+     {
+      "access_type": "denied",
+      "when": null,
+      "between": [
+       0.075423503,
+       0.93751869
+      ]
+     }
+    ],
+    "speed_limits": null
+   }
+  }
+ ]
+}

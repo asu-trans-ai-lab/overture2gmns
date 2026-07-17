@@ -54,6 +54,10 @@ class Network:
     nodes: dict[int, Node] = field(default_factory=dict)
     links: dict[int, Link] = field(default_factory=dict)
     diagnostics: dict[str, Any] = field(default_factory=dict)
+    # One disposition record per candidate interval (source-to-output audit):
+    # {overture_segment_id, lr_start, lr_end, disposition}. Lets verification
+    # prove every eligible interval is accounted for.
+    interval_dispositions: list = field(default_factory=list)
 
     @property
     def number_of_nodes(self) -> int:

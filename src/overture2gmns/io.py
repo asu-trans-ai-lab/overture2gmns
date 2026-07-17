@@ -135,6 +135,17 @@ def output_net_to_csv(network: Network, output_folder: str | Path = "") -> Path:
             row["vdf_free_speed_mph"] = link.free_speed
             writer.writerow(row)
 
+    # Interval-disposition audit: one row per candidate interval, so
+    # verification can prove every eligible interval is accounted for.
+    dispositions = getattr(network, "interval_dispositions", [])
+    if dispositions:
+        with (output_path / "interval_disposition.csv").open(
+                "w", newline="", encoding="utf-8") as stream:
+            writer = csv.DictWriter(
+                stream, fieldnames=["overture_segment_id", "lr_start", "lr_end", "disposition"])
+            writer.writeheader()
+            writer.writerows(dispositions)
+
     (output_path / "diagnostics.json").write_text(
         json.dumps(network.diagnostics, indent=2, sort_keys=True), encoding="utf-8"
     )

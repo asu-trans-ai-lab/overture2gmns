@@ -146,14 +146,33 @@ def verify_conversion(gmns_folder: str | Path) -> dict[str, Any]:
         by_seg[seg].append(piece)
         by_seg_heading[(seg, heading)].append(piece)
 
-    interior_failures = edge_clipped = clean = 0
+    # Interval-disposition audit (if the converter emitted it): an interior
+    # gap in LINK coverage that is explained by an EXCLUDED_* disposition is a
+    # classified source exclusion (e.g. access-denied stretch), NOT a loss.
+    # Only a gap in the *accounted* coverage (links + explicit exclusions) is
+    # a true ERROR_UNACCOUNTED.
+    disp_path = folder / "interval_disposition.csv"
+    excluded_by_seg: dict[str, list[tuple[float, float]]] = defaultdict(list)
+    disposition_counts: Counter = Counter()
+    if disp_path.exists():
+        for row in _read_csv(disp_path):
+            disposition_counts[str(row.get("disposition"))] += 1
+            if str(row.get("disposition", "")).startswith("EXCLUDED"):
+                excluded_by_seg[str(row.get("overture_segment_id"))].append(
+                    (_f(row.get("lr_start")), _f(row.get("lr_end"))))
+
+    interior_failures = access_excluded = edge_clipped = clean = 0
     worst = []
-    for seg, intervals in by_seg.items():
-        cov = _lr_coverage(intervals)
-        if cov["interior_gap"] > 1e-4:       # real conservation failure (a hole)
+    for seg, link_intervals in by_seg.items():
+        cov_link = _lr_coverage(link_intervals)
+        accounted = link_intervals + excluded_by_seg.get(seg, [])
+        cov_acct = _lr_coverage(accounted)
+        if cov_acct["interior_gap"] > 1e-4:      # truly unaccounted (a real hole)
             interior_failures += 1
-            worst.append({"segment": seg, **cov})
-        elif cov["gap"] > 1e-4:              # prefix/suffix missing = boundary clip
+            worst.append({"segment": seg, **cov_acct})
+        elif cov_link["interior_gap"] > 1e-4:    # hole explained by an exclusion
+            access_excluded += 1
+        elif cov_link["gap"] > 1e-4:             # prefix/suffix missing = boundary clip
             edge_clipped += 1
         else:
             clean += 1
@@ -166,13 +185,28 @@ def verify_conversion(gmns_folder: str | Path) -> dict[str, Any]:
         "segments_checked": len(by_seg),
         "clean_union_tiling": clean,
         "interior_conservation_failures": interior_failures,
+        "access_excluded_informational": access_excluded,
         "edge_clipped_informational": edge_clipped,
         "one_way_stretches_informational": one_way_stretches,
+        "disposition_audit_available": disp_path.exists(),
+        "disposition_counts": dict(disposition_counts),
         "worst_interior": sorted(worst, key=lambda w: -w["interior_gap"])[:10],
     }
     if interior_failures:
         issues.append({"status": "ERROR", "check": "lr_interior_conservation_gap",
                        "count": interior_failures})
+
+    # Interval-disposition reconciliation: every generated interval accounts
+    # for its links (BOTH→2, FORWARD/BACKWARD→1). A mismatch means a link has
+    # no disposition or vice versa (ERROR_UNACCOUNTED).
+    if disp_path.exists():
+        expected_links = (2 * disposition_counts.get("GENERATED_BOTH", 0)
+                          + disposition_counts.get("GENERATED_FORWARD", 0)
+                          + disposition_counts.get("GENERATED_BACKWARD", 0))
+        result["integrity"]["disposition_link_mismatch"] = abs(expected_links - len(links))
+        if expected_links != len(links):
+            issues.append({"status": "ERROR", "check": "disposition_link_mismatch",
+                           "count": abs(expected_links - len(links))})
 
     # ---- Report C: attribute provenance distribution ----------------------
     provenance: dict[str, Counter] = {}
@@ -214,9 +248,11 @@ def verification_report_markdown(result: dict[str, Any]) -> str:
         "\n## Linear-reference conservation (Report D)",
         f"- segments checked: {lr['segments_checked']}",
         f"- clean union [0,1] tiling: {lr['clean_union_tiling']}",
-        f"- **interior conservation failures (holes): {lr['interior_conservation_failures']}**",
+        f"- **interior conservation failures (unaccounted holes): {lr['interior_conservation_failures']}**",
+        f"- access-excluded stretches (informational): {lr['access_excluded_informational']}",
         f"- edge-clipped at boundary (expected): {lr['edge_clipped_informational']}",
         f"- one-way stretches (informational): {lr['one_way_stretches_informational']}",
+        f"- interval-disposition audit available: {lr['disposition_audit_available']}",
         "\n## Attribute provenance (Report C)",
         "| attribute | from Overture | defaulted |", "|---|---:|---:|",
     ]
