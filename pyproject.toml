@@ -28,9 +28,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/xzhou99/overture2gmns"
-Repository = "https://github.com/xzhou99/overture2gmns"
-Issues = "https://github.com/xzhou99/overture2gmns/issues"
+Homepage = "https://github.com/asu-trans-ai-lab/overture2gmns"
+Repository = "https://github.com/asu-trans-ai-lab/overture2gmns"
+Issues = "https://github.com/asu-trans-ai-lab/overture2gmns/issues"
 
 [project.optional-dependencies]
 download = ["overturemaps[geopandas]>=0.14"]
