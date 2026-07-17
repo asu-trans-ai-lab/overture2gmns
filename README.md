@@ -26,14 +26,14 @@ inferred class default (neither Overture nor OSM provides observed capacity).
 It isolates the network as the variable — not a validated volume forecast.
 VMT is robust; VHT is more assumption-sensitive.
 
-![Relative routing consistency](research/conversion_quality/figures/fig1_behavioral_fidelity.png)
+![Relative routing consistency](https://raw.githubusercontent.com/asu-trans-ai-lab/overture2gmns/main/research/conversion_quality/figures/fig1_behavioral_fidelity.png)
 
 *Same synthetic demand and same inferred capacity on both networks, so the
 converter output is the only variable: VMT stays within 1% in a small city and
 a full metro — the network representation does not shift where traffic goes.
 This is a controlled relative comparison, not a validated forecast.*
 
-![Semantic advantage](research/conversion_quality/figures/fig2_semantic_advantage.png)
+![Semantic advantage](https://raw.githubusercontent.com/asu-trans-ai-lab/overture2gmns/main/research/conversion_quality/figures/fig2_semantic_advantage.png)
 
 *Where the converters differ: osm2gmns collapses ramp types into `motorway`,
 so no freeway system interchange is recoverable — Overture's `subclass=link`
