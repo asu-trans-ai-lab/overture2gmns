@@ -1,0 +1,7 @@
+# local runtime data (bring your own; not committed)
+osm_az/
+overture/
+corridor/
+reports/
+__pycache__/
+*.pyc

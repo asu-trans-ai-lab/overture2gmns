@@ -1,0 +1,5 @@
+issue_id,mp_bin,issue_type,confidence,status,verdict,assigned_to,resolution,corrected_value,reviewer,review_date,reasoning
+I10_EB-001,0.0,LANE_PROVENANCE,high,Detected,,,,,,,"Overture codes 2 lanes, but that value is an inferred class-default (not surveyed); OSM code higher. Treat Overture as low-quality evidence here — a provenance artifact, not a true lane deficit. (OSM=5L, Overture=2L)"
+I10_EB-002,1.0,LANE_PROVENANCE,high,Detected,,,,,,,"Overture codes 2 lanes, but that value is an inferred class-default (not surveyed); OSM code higher. Treat Overture as low-quality evidence here — a provenance artifact, not a true lane deficit. (OSM=4L, Overture=2L)"
+I10_EB-003,4.0,LANE_PROVENANCE,high,Detected,,,,,,,"Overture codes 2 lanes, but that value is an inferred class-default (not surveyed); OSM code higher. Treat Overture as low-quality evidence here — a provenance artifact, not a true lane deficit. (OSM=4L, Overture=2L)"
+I10_EB-004,26.0,LANE_MISMATCH,medium,Detected,,,,,,,"Lane counts disagree by 1 along this bin — review. (OSM=1L, Overture=2L) [Overture lanes are inferred class-defaults, not surveyed]"

@@ -1,0 +1,200 @@
+source,link_id,mp_begin,mp_end,seg_len_mp,lanes,speed,capacity,cap_sentinel,fclass,name,match_dist_m,confidence
+OSM,65435,0.0,0.0,0.0,1.0,nan,nan,False,motorway,nan,80.0,0.733
+OSM,4908,0.0,0.0,0.0,5.0,65.2,nan,False,motorway,Maricopa Freeway,80.9,0.73
+OSM,96628,0.0,0.0689,0.069,7.0,65.2,nan,False,motorway,Maricopa Freeway,12.1,0.96
+OSM,99430,0.0689,0.8199,0.751,5.0,65.2,nan,False,motorway,Maricopa Freeway,63.0,0.79
+OSM,107768,0.8199,1.2605,0.441,7.0,65.2,nan,False,motorway,Maricopa Freeway,22.2,0.926
+OSM,71,1.2605,1.5293,0.269,2.0,nan,nan,False,motorway,nan,14.0,0.953
+OSM,60739,1.2605,1.9671,0.707,4.0,65.2,nan,False,motorway,Maricopa Freeway,18.3,0.939
+OSM,65539,1.5293,1.5546,0.025,2.0,nan,nan,False,motorway,nan,61.0,0.797
+OSM,17944,1.5546,1.6062,0.052,4.0,nan,nan,False,motorway,nan,78.8,0.737
+OSM,98323,1.6062,1.6446,0.038,4.0,nan,nan,False,motorway,nan,88.8,0.704
+OSM,17943,1.6446,1.6598,0.015,3.0,nan,nan,False,motorway,nan,88.8,0.704
+OSM,24952,1.6598,1.6909,0.031,2.0,nan,nan,False,motorway,nan,87.5,0.708
+OSM,98322,1.6909,1.7194,0.028,2.0,nan,nan,False,motorway,nan,80.0,0.733
+OSM,17941,1.7194,1.9671,0.248,1.0,nan,nan,False,motorway,nan,28.9,0.904
+OSM,65538,1.9671,2.2924,0.325,6.0,65.2,nan,False,motorway,Maricopa Freeway,2.5,0.992
+OSM,60738,2.2924,3.0388,0.746,4.0,65.2,nan,False,motorway,Maricopa Freeway,1.4,0.995
+OSM,3448,2.2924,2.5747,0.282,1.0,nan,nan,False,motorway,nan,17.9,0.94
+OSM,39123,2.5747,2.6076,0.033,2.0,nan,nan,False,motorway,nan,39.6,0.868
+OSM,17282,2.6076,2.6601,0.052,3.0,nan,nan,False,motorway,nan,53.8,0.821
+OSM,39125,2.6601,2.6702,0.01,2.0,nan,nan,False,motorway,nan,55.8,0.814
+OSM,17281,2.6702,2.7022,0.032,2.0,nan,nan,False,motorway,nan,56.0,0.813
+OSM,65536,2.7022,2.7521,0.05,1.0,nan,nan,False,motorway,nan,41.3,0.862
+OSM,17284,2.7521,2.8307,0.079,1.0,nan,nan,False,motorway,nan,29.4,0.902
+OSM,17283,2.8307,3.0388,0.208,1.0,nan,nan,False,motorway,nan,12.5,0.958
+OSM,65534,3.0388,3.2007,0.162,5.0,65.2,nan,False,motorway,Maricopa Freeway,0.5,0.998
+OSM,65535,3.2007,3.8282,0.628,4.0,65.2,nan,False,motorway,Maricopa Freeway,3.4,0.989
+OSM,3386,3.2007,3.5327,0.332,1.0,nan,nan,False,motorway,nan,16.3,0.946
+OSM,17300,3.5327,3.6315,0.099,4.0,nan,nan,False,motorway,nan,103.2,0.656
+OSM,17992,3.6315,3.6388,0.007,4.0,nan,nan,False,motorway,nan,104.9,0.65
+OSM,17993,3.6388,3.6576,0.019,4.0,nan,nan,False,motorway,nan,105.2,0.649
+OSM,39124,3.6576,3.6732,0.016,2.0,nan,nan,False,motorway,nan,101.0,0.663
+OSM,17297,3.6732,3.7468,0.074,2.0,nan,nan,False,motorway,nan,92.4,0.692
+OSM,17301,3.7468,4.0828,0.336,1.0,nan,nan,False,motorway,nan,13.1,0.956
+OSM,65620,3.8282,4.0828,0.255,5.0,65.2,nan,False,motorway,Maricopa Freeway,3.4,0.989
+OSM,65622,4.0828,4.3031,0.22,6.0,65.2,nan,False,motorway,Maricopa Freeway,1.5,0.995
+OSM,65624,4.3031,4.434,0.131,6.0,65.2,nan,False,motorway,Maricopa Freeway,3.2,0.989
+OSM,44,4.3031,4.5088,0.206,1.0,nan,nan,False,motorway,nan,21.4,0.929
+OSM,110790,4.434,4.5241,0.09,6.0,65.2,nan,False,motorway,Maricopa Freeway,4.8,0.984
+OSM,86727,4.5088,4.5216,0.013,1.0,nan,nan,False,motorway,nan,34.6,0.885
+OSM,35924,4.5216,4.5427,0.021,1.0,nan,nan,False,motorway,nan,37.8,0.874
+OSM,24948,4.5241,4.6011,0.077,4.0,65.2,nan,False,motorway,Maricopa Freeway,4.9,0.984
+OSM,3348,4.5241,4.7548,0.231,3.0,nan,nan,False,motorway,nan,15.9,0.947
+OSM,17238,4.5427,4.6636,0.121,4.0,nan,nan,False,motorway,nan,55.6,0.815
+OSM,10616,4.6011,4.7242,0.123,4.0,65.2,nan,False,motorway,Maricopa Freeway,9.8,0.967
+OSM,35926,4.6636,4.6775,0.014,2.0,nan,nan,False,motorway,nan,56.6,0.811
+OSM,65619,4.6775,4.7013,0.024,2.0,nan,nan,False,motorway,nan,56.6,0.811
+OSM,86726,4.7013,4.8596,0.158,2.0,nan,nan,False,motorway,nan,54.3,0.819
+OSM,14212,4.7242,5.7257,1.002,1.0,nan,nan,False,motorway,nan,18.9,0.937
+OSM,44114,4.7242,5.7763,1.052,4.0,65.2,nan,False,motorway,Maricopa Freeway,2.1,0.993
+OSM,106735,4.7548,4.8152,0.06,3.0,nan,nan,False,motorway,nan,29.4,0.902
+OSM,3381,4.8152,4.9348,0.12,2.0,nan,nan,False,motorway,nan,41.0,0.863
+OSM,17237,4.8152,5.7636,0.948,2.0,nan,nan,False,motorway,nan,41.7,0.861
+OSM,3385,4.8596,5.0836,0.224,1.0,nan,nan,False,motorway,nan,71.6,0.761
+OSM,4613,4.9348,5.1614,0.227,2.0,nan,nan,False,motorway,nan,183.5,0.388
+OSM,106732,4.9529,5.7257,0.773,1.0,nan,nan,False,motorway,nan,18.6,0.938
+OSM,24934,4.9615,5.7763,0.815,3.0,65.2,nan,False,motorway,Maricopa Freeway,0.2,0.999
+OSM,44113,4.9615,5.083,0.122,3.0,65.2,nan,False,motorway,Maricopa Freeway,2.4,0.992
+OSM,4604,5.083,5.1514,0.068,3.0,65.2,nan,False,motorway,Maricopa Freeway,1.7,0.994
+OSM,4605,5.0836,5.1513,0.068,1.0,nan,nan,False,motorway,nan,9.6,0.968
+OSM,4621,5.1451,5.8343,0.689,2.0,nan,nan,False,motorway,nan,129.8,0.567
+OSM,106736,5.1513,5.1963,0.045,1.0,nan,nan,False,motorway,nan,8.6,0.971
+OSM,4603,5.1514,5.1963,0.045,3.0,65.2,nan,False,motorway,Maricopa Freeway,3.6,0.988
+OSM,4617,5.17,5.4313,0.261,1.0,nan,nan,False,motorway,nan,143.5,0.522
+OSM,4602,5.1963,5.8849,0.689,3.0,65.2,nan,False,motorway,Maricopa Freeway,21.2,0.929
+OSM,17242,5.4313,5.8849,0.454,2.0,nan,nan,False,motorway,nan,50.7,0.831
+OSM,4620,5.7636,5.8343,0.071,2.0,nan,nan,False,motorway,nan,78.9,0.737
+OSM,65617,5.8849,6.1276,0.243,5.0,65.2,nan,False,motorway,Phoenix-Casa Grande Highway,9.0,0.97
+OSM,64416,6.1276,6.3334,0.206,4.0,65.2,nan,False,motorway,Phoenix-Casa Grande Highway,20.6,0.931
+OSM,64421,6.1276,6.4571,0.329,2.0,nan,nan,False,motorway,nan,32.6,0.891
+OSM,64417,6.3334,6.8133,0.48,3.0,65.2,nan,False,motorway,Phoenix-Casa Grande Highway,16.6,0.945
+OSM,64420,6.4571,6.5058,0.049,2.0,nan,nan,False,motorway,nan,70.9,0.764
+OSM,82712,6.5058,6.5176,0.012,2.0,nan,nan,False,motorway,nan,71.7,0.761
+OSM,5037,6.5176,6.6452,0.128,2.0,nan,nan,False,motorway,nan,64.8,0.784
+OSM,64419,6.6452,6.8133,0.168,1.0,nan,nan,False,motorway,nan,15.9,0.947
+OSM,64426,6.8133,6.8954,0.082,4.0,65.2,nan,False,motorway,Phoenix-Casa Grande Highway,0.2,0.999
+OSM,64427,6.8954,7.3016,0.406,3.0,65.2,nan,False,motorway,Phoenix-Casa Grande Highway,0.6,0.998
+OSM,64428,7.3016,8.0535,0.752,3.0,65.2,nan,False,motorway,Phoenix-Casa Grande Highway,0.8,0.997
+OSM,110800,8.0535,8.1304,0.077,3.0,65.2,nan,False,motorway,Phoenix-Casa Grande Highway,0.1,1.0
+OSM,93,8.1304,8.4093,0.279,2.0,nan,nan,False,motorway,nan,29.9,0.9
+OSM,10266,8.1304,8.9604,0.83,2.0,65.2,nan,False,motorway,Phoenix-Casa Grande Highway,0.7,0.998
+OSM,104413,8.4093,8.4409,0.032,2.0,nan,nan,False,motorway,nan,88.4,0.705
+OSM,62200,8.4409,8.4815,0.041,3.0,nan,nan,False,motorway,nan,102.8,0.657
+OSM,85352,8.4815,8.4922,0.011,3.0,nan,nan,False,motorway,nan,107.2,0.643
+OSM,85353,8.4922,8.5085,0.016,2.0,nan,nan,False,motorway,nan,104.3,0.652
+OSM,64568,8.5085,8.6109,0.102,2.0,nan,nan,False,motorway,nan,80.5,0.732
+OSM,22810,8.6109,8.9604,0.349,1.0,nan,nan,False,motorway,nan,17.8,0.941
+OSM,10267,8.9604,9.1693,0.209,2.0,65.2,nan,False,motorway,Phoenix-Casa Grande Highway,1.5,0.995
+OSM,84327,9.1693,9.3031,0.134,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,1.8,0.994
+OSM,19951,9.3031,11.0474,1.744,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,0.3,0.999
+OSM,80,11.0474,11.3455,0.298,1.0,nan,nan,False,motorway,nan,22.1,0.926
+OSM,98411,11.0474,11.8142,0.767,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,0.1,1.0
+OSM,64566,11.3455,11.3926,0.047,2.0,nan,nan,False,motorway,nan,189.6,0.368
+OSM,23569,11.3926,11.8142,0.422,1.0,nan,nan,False,motorway,nan,56.7,0.811
+OSM,98412,11.8142,12.0691,0.255,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,1.2,0.996
+OSM,84328,12.0691,12.6843,0.615,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,2.3,0.992
+OSM,7872,12.6843,16.6471,3.963,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,2.2,0.993
+OSM,84325,16.6471,16.9394,0.292,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,1.5,0.995
+OSM,84326,16.9394,17.1326,0.193,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,1.6,0.995
+OSM,11589,17.1326,17.388,0.255,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,1.3,0.996
+OSM,92506,17.388,19.8495,2.461,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,0.2,0.999
+OSM,11590,19.8495,20.1684,0.319,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,1.4,0.995
+OSM,2216,19.916,20.1684,0.252,1.0,nan,nan,False,motorway,nan,52.0,0.827
+OSM,11591,20.1684,20.6297,0.461,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,1.7,0.994
+OSM,18911,20.6297,25.7235,5.094,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,0.9,0.997
+OSM,99343,25.7235,26.2489,0.525,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,0.6,0.998
+OSM,2152,25.7235,25.8244,0.101,1.0,nan,nan,False,motorway,nan,6.4,0.979
+OSM,60347,25.8244,25.8629,0.038,1.0,nan,nan,False,motorway,nan,19.7,0.934
+OSM,60348,26.0864,26.1165,0.03,1.0,nan,nan,False,motorway,nan,26.1,0.913
+OSM,11577,26.1165,26.2489,0.132,1.0,nan,nan,False,motorway,nan,9.8,0.967
+OSM,99344,26.2489,27.0333,0.784,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,4.9,0.984
+OSM,64224,27.0333,29.0142,1.981,2.0,75.2,nan,False,motorway,Phoenix-Casa Grande Highway,58.9,0.804
+Overture,100432,0.0,0.0,0.0,2.0,65.0,4400.0,False,motorway_link,nan,80.0,0.733
+Overture,42732,0.0,1.2605,1.26,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,57.8,0.807
+Overture,100428,0.0,0.0,0.0,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,80.9,0.73
+Overture,48486,1.2605,1.6377,0.377,2.0,65.0,4400.0,False,motorway_link,nan,41.7,0.861
+Overture,48553,1.2605,1.9671,0.707,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,18.3,0.939
+Overture,48487,1.6377,1.6446,0.007,2.0,65.0,4400.0,False,motorway_link,nan,88.8,0.704
+Overture,48548,1.6446,1.6598,0.015,2.0,65.0,4400.0,False,motorway_link,nan,88.8,0.704
+Overture,48707,1.6598,1.6673,0.008,2.0,65.0,4400.0,False,motorway_link,nan,87.5,0.708
+Overture,48708,1.6673,1.6909,0.024,2.0,65.0,4400.0,False,motorway_link,nan,83.6,0.721
+Overture,48709,1.6909,1.7195,0.029,2.0,65.0,4400.0,False,motorway_link,nan,75.1,0.75
+Overture,48710,1.7195,1.9671,0.248,2.0,65.0,4400.0,False,motorway_link,nan,28.9,0.904
+Overture,49230,1.9671,2.2924,0.325,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,2.5,0.992
+Overture,54703,2.2924,3.0388,0.746,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,1.4,0.995
+Overture,54626,2.2924,2.575,0.283,2.0,65.0,4400.0,False,motorway_link,nan,17.9,0.94
+Overture,54627,2.575,2.6546,0.08,2.0,65.0,4400.0,False,motorway_link,nan,44.7,0.851
+Overture,54628,2.6546,2.6601,0.006,2.0,65.0,4400.0,False,motorway_link,nan,55.1,0.816
+Overture,54704,2.6601,2.6702,0.01,2.0,65.0,4400.0,False,motorway_link,nan,55.8,0.814
+Overture,54116,2.6702,2.6757,0.006,2.0,65.0,4400.0,False,motorway_link,nan,56.0,0.813
+Overture,54117,2.6757,3.0388,0.363,2.0,65.0,4400.0,False,motorway_link,nan,24.0,0.92
+Overture,53932,3.0388,3.2007,0.162,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,0.5,0.998
+Overture,53701,3.2007,3.6313,0.431,2.0,65.0,4400.0,False,motorway_link,nan,55.5,0.815
+Overture,57125,3.2007,4.0828,0.882,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,3.0,0.99
+Overture,53702,3.6313,3.6387,0.007,2.0,65.0,4400.0,False,motorway_link,nan,105.1,0.65
+Overture,53703,3.6387,3.6503,0.012,2.0,65.0,4400.0,False,motorway_link,nan,104.9,0.65
+Overture,53704,3.6503,3.6576,0.007,2.0,65.0,4400.0,False,motorway_link,nan,105.2,0.649
+Overture,57111,3.6576,3.6732,0.016,2.0,65.0,4400.0,False,motorway_link,nan,101.0,0.663
+Overture,56954,3.6732,3.681,0.008,2.0,65.0,4400.0,False,motorway_link,nan,98.7,0.671
+Overture,56955,3.681,4.0828,0.402,2.0,65.0,4400.0,False,motorway_link,nan,17.0,0.943
+Overture,56710,4.0828,4.3031,0.22,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,1.5,0.995
+Overture,56076,4.3031,4.6573,0.354,2.0,65.0,4400.0,False,motorway_link,nan,31.1,0.896
+Overture,56733,4.3031,4.5241,0.221,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,3.2,0.989
+Overture,56141,4.5241,4.8152,0.291,2.0,65.0,4400.0,False,motorway_link,nan,28.0,0.907
+Overture,56139,4.5241,4.7242,0.2,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,7.5,0.975
+Overture,56077,4.6573,4.6636,0.006,2.0,65.0,4400.0,False,motorway_link,nan,55.6,0.815
+Overture,56155,4.6636,4.6775,0.014,2.0,65.0,4400.0,False,motorway_link,nan,56.6,0.811
+Overture,2179,4.6775,4.6872,0.01,2.0,65.0,4400.0,False,motorway_link,nan,56.1,0.813
+Overture,2180,4.6872,5.0834,0.396,2.0,65.0,4400.0,False,motorway_link,nan,82.6,0.725
+Overture,2823,4.7242,5.7453,1.021,2.0,65.0,4400.0,False,motorway_link,nan,18.8,0.937
+Overture,2183,4.7242,5.083,0.359,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,0.8,0.997
+Overture,2176,4.8152,5.7722,0.957,2.0,65.0,4400.0,False,motorway_link,nan,65.2,0.783
+Overture,2796,4.8152,4.9562,0.141,2.0,65.0,4400.0,False,motorway_link,nan,38.4,0.872
+Overture,2177,4.925,5.7722,0.847,2.0,65.0,4400.0,False,motorway_link,nan,78.9,0.737
+Overture,2178,4.925,5.1451,0.22,2.0,65.0,4400.0,False,motorway_link,nan,129.8,0.567
+Overture,2797,4.9562,5.1952,0.239,2.0,65.0,4400.0,False,motorway_link,nan,171.3,0.429
+Overture,2184,5.083,5.1514,0.068,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,1.7,0.994
+Overture,2181,5.0834,5.1513,0.068,2.0,65.0,4400.0,False,motorway_link,nan,9.6,0.968
+Overture,2787,5.1505,5.4313,0.281,2.0,65.0,4400.0,False,motorway_link,nan,140.6,0.531
+Overture,2182,5.1513,5.1963,0.045,2.0,65.0,4400.0,False,motorway_link,nan,8.6,0.971
+Overture,2185,5.1514,5.1963,0.045,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,3.6,0.988
+Overture,2824,5.1758,5.7453,0.57,2.0,65.0,4400.0,False,motorway_link,nan,204.4,0.319
+Overture,2196,5.1963,5.8849,0.689,2.0,65.0,4400.0,False,motorway,Maricopa Freeway,21.2,0.929
+Overture,2197,5.4313,5.8849,0.454,2.0,65.0,4400.0,False,motorway_link,nan,50.7,0.831
+Overture,2692,5.8849,6.1276,0.243,2.0,65.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,9.0,0.97
+Overture,2652,6.1276,6.8133,0.686,2.0,65.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,22.6,0.925
+Overture,2685,6.1276,6.4571,0.329,2.0,65.0,4400.0,False,motorway_link,nan,32.6,0.891
+Overture,2653,6.4571,6.501,0.044,2.0,65.0,4400.0,False,motorway_link,nan,70.9,0.764
+Overture,2654,6.501,6.5058,0.005,2.0,65.0,4400.0,False,motorway_link,nan,71.2,0.763
+Overture,2657,6.5058,6.5176,0.012,2.0,65.0,4400.0,False,motorway_link,nan,71.7,0.761
+Overture,2670,6.5176,6.5231,0.006,2.0,65.0,4400.0,False,motorway_link,nan,72.1,0.76
+Overture,2671,6.5231,6.8133,0.29,2.0,65.0,4400.0,False,motorway_link,nan,25.0,0.917
+Overture,3427,6.8133,8.1304,1.317,2.0,65.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,1.2,0.996
+Overture,2600,8.1304,8.4406,0.31,2.0,65.0,4400.0,False,motorway_link,nan,34.8,0.884
+Overture,2603,8.1304,8.9604,0.83,2.0,65.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,0.7,0.998
+Overture,2601,8.4406,8.4815,0.041,2.0,65.0,4400.0,False,motorway_link,nan,102.8,0.657
+Overture,2602,8.4815,8.4922,0.011,2.0,65.0,4400.0,False,motorway_link,nan,107.2,0.643
+Overture,4994,8.4922,8.9604,0.468,2.0,65.0,4400.0,False,motorway_link,nan,28.1,0.906
+Overture,4998,8.9604,9.1692,0.209,2.0,65.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,1.5,0.995
+Overture,4999,9.1692,9.9218,0.753,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,6.7,0.978
+Overture,5000,9.9218,11.0474,1.126,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,0.3,0.999
+Overture,9655,11.0474,11.3926,0.345,2.0,65.0,4400.0,False,motorway_link,nan,22.1,0.926
+Overture,9653,11.0474,11.8142,0.767,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,0.1,1.0
+Overture,9652,11.3926,11.8142,0.422,2.0,65.0,4400.0,False,motorway_link,nan,56.7,0.811
+Overture,9692,11.8142,12.6837,0.87,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,1.3,0.996
+Overture,9693,12.6837,16.6465,3.963,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,2.2,0.993
+Overture,9694,16.6465,17.1321,0.486,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,1.5,0.995
+Overture,9695,17.1321,17.3875,0.255,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,1.2,0.996
+Overture,9696,17.3875,19.8495,2.462,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,1.6,0.995
+Overture,27912,19.8495,20.1684,0.319,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,1.4,0.995
+Overture,27918,19.916,20.1684,0.252,2.0,65.0,4400.0,False,motorway_link,nan,52.0,0.827
+Overture,28053,20.1684,25.57,5.402,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,0.2,0.999
+Overture,28054,25.57,25.7235,0.154,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,0.1,1.0
+Overture,41103,25.7235,25.8629,0.139,2.0,65.0,4400.0,False,motorway_link,nan,10.8,0.964
+Overture,41104,25.7235,26.2489,0.525,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,0.6,0.998
+Overture,41101,26.0864,26.0941,0.008,2.0,65.0,4400.0,False,motorway_link,nan,26.7,0.911
+Overture,41102,26.0941,26.2489,0.155,2.0,65.0,4400.0,False,motorway_link,nan,11.8,0.961
+Overture,41146,26.2489,27.5758,1.327,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,17.2,0.943
+Overture,41147,27.5758,28.2932,0.717,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,48.8,0.837
+Overture,41148,28.2932,29.0142,0.721,2.0,75.0,4400.0,False,motorway,Phoenix-Casa Grande Highway,8.2,0.973

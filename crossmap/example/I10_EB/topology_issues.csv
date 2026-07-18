@@ -1,0 +1,5 @@
+mp_bin,type,detail,counts
+10.0,COVERAGE_GAP,OSM has no matched link in this bin (others do),OSM=0 Overture=1
+21.0,COVERAGE_GAP,Overture has no matched link in this bin (others do),OSM=1 Overture=0
+27.0,COVERAGE_GAP,Overture has no matched link in this bin (others do),OSM=1 Overture=0
+28.0,COVERAGE_GAP,OSM has no matched link in this bin (others do),OSM=0 Overture=2
